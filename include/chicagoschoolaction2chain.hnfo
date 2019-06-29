@@ -152,18 +152,18 @@
 0 * 0		02 07 83 81 40 00 03 03 5A 00 00 00 5B 00 01 01 5C 00 02 02 82 00 
 
 // random varact2 to pick the building variant to spawn
-0 * 0		02 07 
-		99 
-		80 
-		00 
-		00 
-		10 
-		83 00 
-		81 00 
-		7F 00 
-		7D 00 
-		7B 00 
-		79 00 
+0 * 0		02 07 // act 2 feat 7
+		99 // setid
+		80 // lolol so random XD
+		00 // no triggers
+		00 // first random bit to use
+		10 // 16 choices total
+		83 00 // these point at the construction stage setids for each varient.
+		81 00 // why are there so many varients?
+		7F 00 // who can know these things.
+		7D 00 // how did Oz maintain sanity even drawing them?
+		7B 00 // is there a better way of handling these varients?
+		79 00 // the answer is probably worse than the current situation we're in
 		77 00 
 		75 00 
 		73 00 
@@ -177,18 +177,18 @@
 
 // varact2 to restrict building until a certain population
 0 * 0		02 07 
-			9A // setid
-			86 // var of city
-			82 // var town pop
-			00 FF FF // varadj
-			02 // numranges
-			00 FF // setid
-			00 00 // minval
-			DB 05 // maxval
-			01 FF // setid
-			DC 05 // minval
-			FF FF // maxval
-			03 00 // default setid
+		9A // setid
+		86 // var of city
+		82 // var town pop
+		00 FF FF // varadj
+		02 // numranges
+		00 FF // setid
+		00 00 // minval
+		DB 05 // maxval
+		01 FF // setid
+		DC 05 // minval
+		FF FF // maxval
+		03 00 // default setid
   
 // random chance 25% of protect
 0 * 0		02 07 // act 2 feat 7
@@ -212,7 +212,6 @@
 		01 FF // protec
 		00 FF // unprotec
 
-
 // random chance 75% of protect
 0 * 0		02 07 // act 2 feat 7
 		A9 // setid
@@ -225,7 +224,6 @@
 		01 FF // protect
 		00 FF // unprotect
 
-
 // years since 1920
 0 * 0		02 07 // act 2 feat 7
 		A0 // setid
@@ -233,21 +231,27 @@
 		01 // var town pop
 		00 FF // varadj
 		05 // numranges
+
 		01 FF // setid protec 0%
 		00 // minval eightyone
 		14 // maxval infinity
+
 		A7 00 // setid protec 25%
 		15 // minval zero
 		28 // maxval forty
+
 		A8 00 // setid protect 50%
 		29 // minval fortyone
 		3C // maxval sixty
+
 		A9 00 // setid protec 75%
 		3D // minval sixtyone
 		50 // maxval eighty
+
 		01 FF // setid protec 100%
 		51 // minval eightyone
 		FF // maxval infinity
+
 		01 FF // default setid
 
 // Current Callback  
