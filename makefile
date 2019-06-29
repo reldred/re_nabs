@@ -1,26 +1,11 @@
-# Evil monstorous HNFO compiling makefile of DOOM!
-# Written by Richard 'Aegir' Eldred. Major kudos to Josef 'Patchman' Drexler for the suggestion.
-
-# MINI README:
-
-# What we're doing here breaks away from NFO coding norms a bit by using C style includes in our NFO files. Our working NFO files we now give the extension ".hnfo". I have no idea what the significance of the H is, blame Josef for that. So now, we can break up a large NFO into multiple parts.
-
-# From there, we use GCC to preprocess our HNFO. Unfortunatly it strips // comments but leaves # comments intact, so our processed NFO needs some nforenum loving (Which really should be done anyway to fix up sprite numbers and pseudosprite sizes, trying to do those by hand is madness).
-
-# Lastly, with our NFORENUM processed NFO, we can then run GRFCODEC over it as usual.
-
-# Instant lovin' for your large projects.
-
-# Change the macro's around to suit your local configuration. I'm a lazy twot who uses grfcodec and nforenum via WINE. This allows my same TTD setup and dev environment to be portable back and forth between Windows and my own Linux machines.
-
-# This should all work on a Windows machine with GCC and MAKE, although you will have to possibly change your CC macro to suit your setup.
-
-# Lastly, you will just need to change around the relevent portion of the macros that alias your particular project, and then you should be about right.
+# reldreds garbage nfo compile system
+# Written by reldred, the artist formerly known as Aegir. Major kudos to Josef 'Patchman' Drexler for the 
+# suggestion to abuse the hell out of gcc preprocess and then make nforenum wipe our arses for us.
 
 # Have fun.
 
 # Our Steps:
-# 1: gcc -E preprocess
+# 1: gcc -ECP preprocess
 # 2: nforenum process
 # 3: grfcodec compile
 
