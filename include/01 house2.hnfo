@@ -1,0 +1,209 @@
+// Small House 2 - Grey roof, small corner shops
+// Action 1:
+	0 * 0	 01 07 06 FF 01 00
+
+// Real Sprites:
+	0 art\house02.png 7 3 09 31 64 -31 0
+	0 art\house02.png 83 3 09 38 64 -31 -7
+	0 art\house02.png 159 3 09 33 64 -31 -2
+	0 art\house02.png 230 3 09 34 64 -31 -3
+	0 art\house02.png 306 3 09 31 64 -31 0
+	0 art\house02.png 376 3 09 34 64 -31 -3
+
+	// Action 0 to set properties:
+	0 * 0	 00 07 // Action 0, Feature 07
+	05 // Properties to Change
+		01 // Change properties for how many ID's
+		01 // ID
+		08 2E // Substitute type
+		09 01 // Building flags
+		0A 0A FF // Set years availible
+		13 03 38 // Set availibilty mask
+		1D 04 // Set prop 1D to 4
+
+		
+		
+// Action 4 to set name:  
+    0 * 0	 04 07  // Action 4, Feature 7
+                 9F // Language ID
+                 01 // Number of strings to change
+                 07 C9 // Offset
+                 "Suburban Shop 01" 00 // String
+                 
+// Action 2 Chain:
+// What we're going to do is check first check for our callbacks, if our callback gets called (This time its a callback that gets called when a town tries to demolish it's own building), it will go to a random action2, which then provides a few different possibilities for protecting the building. If the callback isn't getting called, it will jump straight to the construction stages, which will move through the three different stages of construction, before hitting the last stage, which is another varaction2 that checks for the ground type. That varaction2 will then link to either the normal building sprite, or the snowy building sprite depending on the ground type.
+
+// 1st stage action 2:
+	0 * 0	 02 07 // Action 2, Feature 07
+		00 // Set ID
+		00 // Literal 0
+		54 0F 00 00 // Ground Sprite (3924)
+		00 00 00 80 // Building Sprite (00)
+		00 // Xoff
+		00 // Yoff
+		10 // Xext
+		10 // Yext
+		04 // Zext
+
+// 2nd stage action 2:
+	0 * 0	 02 07 // Action 2, Feature 07
+		01 // Set ID
+		00 // Literal 0
+		54 0F 00 00 // Ground Sprite (3924)
+		01 00 00 80 // Building Sprite (01)
+		00 // Xoff
+		00 // Yoff
+		10 // Xext
+		10 // Yext
+		04 // Zext
+
+// 3rd stage action 2:
+	0 * 0	 02 07 // Action 2, Feature 07
+		02 // Set ID
+		00 // Literal 0
+		54 0F 00 00 // Ground Sprite (3924)
+		02 00 00 80 // Building Sprite (02)
+		00 // Xoff
+		00 // Yoff
+		10 // Xext
+		10 // Yext
+		04 // Zext
+
+// Finished stage action 2:
+	0 * 0	 02 07 // Action 2, Feature 07
+		03 // Set ID
+		00 // Literal 0
+		04 00 00 80 // Ground Sprite (04)
+		03 00 00 80 // Building Sprite (03)
+		00 // Xoff
+		00 // Yoff
+		10 // Xext
+		10 // Yext
+		04 // Zext
+
+// Snowy stage action 2:
+	0 * 0	 02 07 // Action 2, Feature 07
+		04 // Set ID
+		00 // Literal 0
+		04 00 00 80 // Ground Sprite (04)
+		05 00 00 80 // Building Sprite (05)
+		00 // Xoff
+		00 // Yoff
+		10 // Xext
+		10 // Yext
+		04 // Zext
+
+// Check ground type and select either no.3 or no.4:
+	0 * 0	 02 07 // Action 2, Feature 07
+		10 // Set ID
+		81 // Type (Lowest Byte of value accessed for house)
+		43 // Variable (Terrain Type)
+		00 FF // Varadjust (AND FF)
+		02 // Nuber of ranges
+		// Range Checks:
+		03 00 // Use Set ID 3...
+		00 03 // If ground type between 0 and 3
+		04 00 // Use Set ID 4...
+		04 04 // If ground type between 4 and 4
+		03 00 // Default Set ID to use if checks fail
+
+// Construction stages, at last stage go to ground type checking:
+	0 * 0	02 07 // Action 2, Feature 07
+		11 // Set ID
+		81 // Type (Lowest Byte of value accessed for house)
+		40 // Variable (Construction stages)
+		00 FF // Varadjust (AND FF)
+		03 // Number of ranges
+		// Range Checks:
+		00 00 // Use Set ID 0...
+		00 00 // If construction stage 0
+		01 00 // Use Set ID 1...
+		01 01 // If construction stage 1
+		02 00 // Use Set ID 2...
+		02 02 // If construction stage 2
+		10 00 // Default Set ID to use if checks fail
+
+// Protect if 5 years old or younger:
+	0 * 0	02 07 // Action 2, Feature 07
+		20 // Set ID
+		81 // Type (Lowest Byte of value accessed for house)
+		41 // Variable (Age of building)
+		00 FF // Varadjust (AND FF)
+		02 // Number of ranges
+		01 FF // Return 1 if...
+		00 05 // Building 5 years or younger
+		00 FF // Return 0 if...
+		06 FF // Building 6 years or older
+		03 00 // Default Set ID to use if checks fail
+
+		// Protect if 5 years old or younger:
+	0 * 0	02 07 // Action 2, Feature 07
+		21 // Set ID
+		81 // Type (Lowest Byte of value accessed for house)
+		41 // Variable (Age of building)
+		00 FF // Varadjust (AND FF)
+		02 // Number of ranges
+		01 FF // Return 1 if...
+		00 05 // Building 5 years or younger
+		00 FF // Return 0 if...
+		06 FF // Building 6 years or older
+		03 00 // Default Set ID to use if checks fail
+
+// Protect if 10 years old or younger:
+	0 * 0	02 07 // Action 2, Feature 07
+		22 // Set ID
+		81 // Type (Lowest Byte of value accessed for house)
+		41 // Variable (Age of building)
+		00 FF // Varadjust (AND FF)
+		02 // Number of ranges
+		01 FF // Return 1 if...
+		00 0A // Building 10 years or younger
+		00 FF // Return 0 if...
+		0B FF // Building 11 years or older
+		03 00 // Default Set ID to use if checks fail
+
+// Protect if 15 years old or younger:
+	0 * 0	02 07 // Action 2, Feature 07
+		23 // Set ID
+		81 // Type (Lowest Byte of value accessed for house)
+		41 // Variable (Age of building)
+		00 FF // Varadjust (AND FF)
+		02 // Number of ranges
+		01 FF // Return 1 if...
+		00 0F // Building 15 years or younger
+		00 FF // Return 0 if...
+		10 FF // Building 16 years or older
+		03 00 // Default Set ID to use if checks fail
+
+// Random chance to pick either no.20, no.21, no.22 or no.23:
+	0 * 0	 02 07 // Action 2, Feature 07
+		24 // Set ID
+		80 // Randomize object based on itself
+		00 // random Triggers
+		00 // Random bit to use
+		04 // Number of choices
+		20 00 // SetID 20
+		21 00 // SetID 21
+		22 00 // SetID 22
+		23 00 // SetID 23
+
+// Current Callback. If callback for destruction called, goto no.24, else goto no.11:
+	0 * 0	 02 07 // Action 2, Feature 07
+		25 // Set ID
+		85 // Type (Lowest Word of value accessed for house)
+		0C // Variable (Current Callback)
+		00 FF FF // Varadjust (AND FFFF)
+		01 // Number of ranges
+		24 00 // Use SetID 24 if...
+		43 01 43 01 // Callback 143 is being called
+		11 00 // Default Sprite to use if check fails (Else goto 11)
+
+// Assign last action2 to id.2:
+	0 * 0	03 07 // Action 3, Feature 07
+		01 // 1 id associated
+		01 // id.1
+		00 // cargotype, not used innit
+		25 // last action2 setid
+		00 // default setid
+
+// Fin
