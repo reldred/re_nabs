@@ -1,7 +1,6 @@
 // Small Building 1 - Two shops side by side
 // Action 1:
-0 * 0		01 07 
-		06 FF 01 00 
+0 * 0		01 07 06 FF 01 00 
 
 // Real Sprites:    
 0 art\smallbuilding01.png 5 6 09 34 64 -31 -3
@@ -11,19 +10,19 @@
 0 art\smallbuilding01.png 306 6 09 32 64 -31 -1
 0 art\smallbuilding01.png 377 6 09 59 64 -31 -28
 
- Action 0 to set properties:   
-    0 * 0	 00 07 // Action 0, Feature 7
-                 06 // Properties to change
-                 01 // Change properties for how many ID's
-                 02 // ID
+// Action 0 to set properties:   
+0 * 0		00 07 // Action 0, Feature 7
+		06 // Properties to change
+		01 // Change properties for how many ID's
+		02 // ID
 #include "smallbuildingaction0.hnfo"
 
 // Action 4 to set name:  
-    0 * 0	 04 07  // Action 4, Feature 7
-                 9F // Language ID
-                 01 // Number of strings to change
-                 02 C9 // Offset
-                 "Small Building 01" 00 // String
+0 * 0		04 07  // Action 4, Feature 7
+		9F // Language ID
+		01 // Number of strings to change
+		02 C9 // Offset
+		"Small Building 01" 00 // String
                  
 // Action 2 chain:
 #include "smallbuildingaction2chain.hnfo"
@@ -33,7 +32,7 @@
 		01 // 1 id associated
 		02 // id.2
 		00 // cargotype, not used innit
-		25 // last action2 setid
+		11 // last action2 setid
 		00 // default setid
 
 // Fin

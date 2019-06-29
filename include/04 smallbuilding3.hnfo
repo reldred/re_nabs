@@ -1,29 +1,28 @@
 // Small Building 3 - More flats.
-
 // Action 1:
-    0 * 0	 01 07 06 FF 01 00 
+0 * 0		01 07 06 FF 01 00 
 
 // Real Sprites:
-    0 art\ae_nabs1.png 321 120 09 35 63 -31 -4
-    0 art\ae_nabs1.png 399 120 09 44 64 -31 -13
-    0 art\ae_nabs1.png 478 120 09 52 64 -31 -21
-    0 art\ae_nabs1.png 557 120 09 52 64 -31 -21
-    0 art\ae_nabs1.png 636 120 09 31 63 -30 0
-    0 art\ae_nabs1.png 714 120 09 52 64 -31 -21
+0 art\ae_nabs1.png 321 120 09 35 63 -31 -4
+0 art\ae_nabs1.png 399 120 09 44 64 -31 -13
+0 art\ae_nabs1.png 478 120 09 52 64 -31 -21
+0 art\ae_nabs1.png 557 120 09 52 64 -31 -21
+0 art\ae_nabs1.png 636 120 09 31 63 -30 0
+0 art\ae_nabs1.png 714 120 09 52 64 -31 -21
 
- Action 0 to set properties:   
-    0 * 0	 00 07 // Action 0, Feature 7
-                 06 // Properties to change
-                 01 // Change properties for how many ID's
-                 04 // ID
+// Action 0 to set properties:   
+0 * 0	 00 07 // Action 0, Feature 7
+		06 // Properties to change
+		01 // Change properties for how many ID's
+		04 // ID
 #include "smallbuildingaction0.hnfo"
 
 // Action 4 to set name:
-    0 * 0	 04 07 // Action 4, Feature 7
-                 9F // Language ID
-                 01 // Number of strings to change
-                 04 C9 // Offset
-                 "Small Building 03" 00  // String
+0 * 0		04 07 // Action 4, Feature 7
+		9F // Language ID
+		01 // Number of strings to change
+		04 C9 // Offset
+		"Small Building 03" 00  // String
 
 // Action 2 chain:
 #include "smallbuildingaction2chain.hnfo"
@@ -33,7 +32,7 @@
 		01 // 1 id associated
 		04 // id.2
 		00 // cargotype, not used innit
-		25 // last action2 setid
+		11 // last action2 setid
 		00 // default setid
-    
+
 // Fin
