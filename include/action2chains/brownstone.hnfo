@@ -381,83 +381,85 @@
                  23 00 // SetID 23
                  21 00 // SetID 21
 
+		 
+// Check minimum population required
     0 * 0	 02 07 
-			29 // setid
-			86 // var of city
-			82 // var town pop
-			00 FF FF // varadj
-			02 // numranges
-			00 FF // setid
-			00 00 // minval
-			F3 01 // maxval
-			01 FF // setid
-			F4 01 // minval
-			FF FF // maxval
-			03 00 // default setid
+		29 // setid
+		86 // var of city
+		82 // var town pop
+		00 FF FF // varadj
+		02 // numranges
+		00 FF // setid
+		00 00 // minval
+		F3 01 // maxval
+		01 FF // setid
+		F4 01 // minval
+		FF FF // maxval
+		03 00 // default setid
   
-// Protect if 10 years old or younger:
-    0 * 0	 02 07 // Action 2, Feature 07
-                 30 // Set ID
-                 81 // Type (Lowest Byte of value accessed for house)
-                 41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
-                 02 // Number of ranges
-                 01 FF // Return 1 if...
-                 00 0A // Building 10 years or younger
-                 00 FF // Return 0 if...
-                 0B FF // Building 11 years or older
-                 03 00 // Default SetID to use if checks fail
-   
-// Protect if 15 years old or younger:
-    0 * 0	 02 07 // Action 2, Feature 07
-                 31 // Set ID
-                 81 // Type (Lowest Byte of value accessed for house)
-                 41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
-                 02 // Number of ranges
-                 01 FF // Return 1 if...
-                 00 0F // Building 15 years or younger
-                 00 FF // Return 0 if...
-                 10 FF // Building 16 years or older
-                 03 00 // Default SetID to use if checks fail 
-   
-// Protect if 20 years old or younger:
-    0 * 0	 02 07 // Action 2, Feature 07
-                 32 // Set ID
-                 81 // Type (Lowest Byte of value accessed for house)
-                 41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
-                 02 // Number of ranges
-                 01 FF // Return 1 if...
-                 00 14 // Building 20 years or younger
-                 00 FF // Return 0 if...
-                 15 FF // Building 21 years or older
-                 03 00 // Default SetID to use if checks fail 
-   
-// Protect if 25 years old or younger:
-    0 * 0	 02 07 // Action 2, Feature 07
-                 33 // Set ID
-                 81 // Type (Lowest Byte of value accessed for house)
-                 41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
-                 02 // Number of ranges
-                 01 FF // Return 1 if...
-                 00 19 // Building 25 years or younger
-                 00 FF // Return 0 if...
-                 1A FF // Building 26 years or older
-                 03 00 // Default SetID to use if checks fail 
+// random chance 25% of protect
+0 * 0		02 07 // act 2 feat 7
+		31 // setid
+		80 // random callback
+		00 // no triggers
+		00 // first random bit to use
+		04 // number of choices
+		01 FF // protect
+		00 FF // unprotect
+		00 FF // unprotect
+		00 FF // unprotect
 
-// Random chance to pick either no.30, no.31, no.32 or no.33:  
-    0 * 0	 02 07 // Action 2, Feature 07
-                 34 // Set ID
-                 80 // Randomize object based on itself
-                 00 // Random Triggers
-                 00 // Random bit to use
-                 04 // Number of choices
-                 30 00 // SetID 30
-                 31 00 // SetID 31
-                 32 00 // SetID 32
-                 33 00 // SetID 33
+// random chance 50% of protect
+0 * 0		02 07 // act 2 feat 7
+		32 // setid
+		80 // random callback
+		00 // no triggers
+		00 // first random bit to use
+		02 // number of choices
+		01 FF // protec
+		00 FF // unprotec
+
+// random chance 75% of protect
+0 * 0		02 07 // act 2 feat 7
+		33 // setid
+		80 // random callback
+		00 // no triggers
+		00 // first random bit to use
+		04 // number of choices
+		01 FF // protect
+		01 FF // protect
+		01 FF // protect
+		00 FF // unprotect
+
+// years since 1920
+0 * 0		02 07 // act 2 feat 7
+		34 // setid
+		81 // global var
+		01 // var town pop
+		00 FF // varadj
+		05 // numranges
+
+		01 FF // setid protec 0%
+		00 // minval eightyone
+		14 // maxval infinity
+
+		31 00 // setid protec 25%
+		15 // minval zero
+		28 // maxval forty
+
+		32 00 // setid protect 50%
+		29 // minval fortyone
+		3C // maxval sixty
+
+		33 00 // setid protec 75%
+		3D // minval sixtyone
+		50 // maxval eighty
+
+		01 FF // setid protec 100%
+		51 // minval eightyone
+		FF // maxval infinity
+
+		01 FF // default setid
 
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
     0 * 0	 02 07 // Action 2, Feature 07
