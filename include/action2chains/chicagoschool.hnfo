@@ -129,6 +129,23 @@
 		DC 05 // minval
 		FF FF // maxval
 		01 FF // default setid
+		
+// Check to see how many are left, we'll allow one of each to survive for a max of 8
+0 * 0		02 07 // Act 2 feat 7
+		A6 // setid
+		81 // town var
+		61 // how many of a building id exist
+		BUILDING_ID // the building id to check, ours!
+		00 // shift
+		FF // and mask
+		02 // ranges to follow
+		01 FF // setid to use (protec)
+		00 // minval
+		01 // maxval		
+		00 FF // setid to use (unprotec)
+		02 // minval
+		FF // maxval
+		00 FF // setid to use (unprotec) 
   
 // random chance 25% of protect
 0 * 0		02 07 // act 2 feat 7
@@ -138,9 +155,9 @@
 		00 // first random bit to use
 		04 // number of choices
 		01 FF // protect
-		00 FF // unprotect
-		00 FF // unprotect
-		00 FF // unprotect
+		A6 00 // unprotect if there's more than 1 left
+		A6 00 // unprotect if there's more than 1 left
+		A6 00 // unprotect if there's more than 1 left
 
 // random chance 50% of protect
 0 * 0		02 07 // act 2 feat 7
@@ -150,7 +167,7 @@
 		00 // first random bit to use
 		02 // number of choices
 		01 FF // protec
-		00 FF // unprotec
+		A6 00 // unprotect if there's more than 1 left
 
 // random chance 75% of protect
 0 * 0		02 07 // act 2 feat 7
@@ -162,7 +179,7 @@
 		01 FF // protect
 		01 FF // protect
 		01 FF // protect
-		00 FF // unprotect
+		A6 00 // unprotect if there's more than 1 left
 
 // years since 1920
 0 * 0		02 07 // act 2 feat 7

@@ -110,6 +110,23 @@
  
  // Pick random variation
 1995 * 23	 02 07 2A 80 00 00 08 1F 00 21 00 23 00 25 00 26 00 29 00 1F 00 21 00 
+
+// Check to see if one has already been built
+0 * 0		02 07 // Act 2 feat 7
+		2B // setid
+		81 // town var
+		61 // how many of a building id exist
+		BUILDING_ID // the building id to check, ours!
+		00 // shift
+		FF // and mask
+		02 // ranges to follow
+		01 FF // setid to use (protec)
+		00 // minval
+		05 // maxval		
+		00 FF // setid to use (unprotec)
+		06 // minval
+		FF // maxval
+		00 FF // setid to use (unprotec) 
  
 // varact2 to restrict building until a certain population (3k)
 0 * 0		02 07 
@@ -126,8 +143,21 @@
 		FF FF // maxval
 		01 FF // default setid  
 
-// Check Callback
-2002 * 23	 02 07 3C 85 0C 00 FF FF 01 2C 00 17 00 17 00 2A 00 
+// Current Callback  
+0 * 0		02 07 // act 2 feat 7
+		3C // setid
+		85 // type, variable of building
+		0C // variable 0c current callback
+		00 // shift
+		FF FF // and mask
+		02 // ranges to follow
+		2C 00 // setid
+		17 00 // callback 17 on build
+		17 00 // callback 17 on build
+		2B 00 // setid check how many are left
+		43 01 // callback 143 on destruct
+		43 01 // callback 143 on destruct
+		11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 
 // Action 3
 2003 * 7	 03 07 01 BUILDING_ID 00 3C 00 
