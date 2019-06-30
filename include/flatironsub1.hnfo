@@ -12,12 +12,13 @@
 
 // Action 0
 0 * 0		00 07 
-		04 
+		05 
 		01 
 		BUILDING_ID 
 		08 43 
 		10 60 EA 
-		11 FF 
+		11 FF
+		19 02 // must protec
 		1D 04
 		
 // Action 4 to set name:  
