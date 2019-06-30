@@ -112,11 +112,11 @@
 // ID 1B - 1E Department Store (North, East, West and South)
 #define BUILDING_ID 1B
 #include "include/departmentstoremain.hnfo"
-#define BUILDING_ID 1B
+#define BUILDING_ID 1C
 #include "include/departmentstoresub1.hnfo"
-#define BUILDING_ID 1B
+#define BUILDING_ID 1D
 #include "include/departmentstoresub2.hnfo"
-#define BUILDING_ID 1B
+#define BUILDING_ID 1E
 #include "include/departmentstoresub3.hnfo"
 
 // Fin
