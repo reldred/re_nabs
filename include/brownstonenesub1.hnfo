@@ -1,0 +1,43 @@
+// Brownstone (NE) (S)
+
+// Action 1:
+    0 * 0	 01 07 0C FF 01 00
+
+// Real Sprites:      
+    0 art\ae_nabs1.png 321 435 09 63 64 -31 -32
+    0 art\ae_nabs1.png 400 435 09 70 64 -31 -39
+    0 art\ae_nabs1.png 479 435 09 70 64 -31 -39
+    0 art\ae_nabs1.png 558 435 09 70 64 -31 -39
+    0 art\ae_nabs1.png 637 435 09 70 64 -31 -39
+    0 art\ae_nabs1.png 716 435 09 70 64 -31 -39
+    0 art\ae_nabs1.png 5 510 09 70 64 -31 -39
+    0 art\ae_nabs1.png 84 510 09 31 64 -31 0
+    0 art\ae_nabs1.png 163 510 09 54 64 -31 -23
+    0 art\ae_nabs1.png 242 510 09 54 64 -31 -23
+    0 art\ae_nabs1.png 321 510 09 54 64 -31 -23
+    0 art\ae_nabs1.png 400 510 09 54 64 -31 -23
+
+// Action 0 to set properties:    
+    0 * 0	 00 07 
+                 04 
+                 01 
+                 BUILDING_ID 
+                 08 4B 
+                 10 20 4E 
+                 11 64 
+                 1D 04
+                 
+// Action 4 to set name:  
+    0 * 0	 04 07  // Action 4, Feature 7
+                 9F // Language ID
+                 01 // Number of strings to change
+                 BUILDING_ID C9 // Offset
+                 "Large Flats" 00 // String 
+                             
+// Action 2 chain:
+#include "action2chains\brownstone.hnfo"
+
+// Assign last action2 to id.35:  
+  372 * 7	 03 07 01 BUILDING_ID 00 35 00
+  
+// Fin  

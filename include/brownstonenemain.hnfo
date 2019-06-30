@@ -1,0 +1,48 @@
+// Brownstone (NE) (N)
+
+// Action 1:
+    0 * 0	 01 07 0C FF 01 00 
+  
+// Real Sprites:  
+    0 art\ae_nabs1.png 321 376 09 47 32 1 -16
+    0 art\ae_nabs1.png 368 376 09 54 32 1 -23
+    0 art\ae_nabs1.png 415 376 09 54 32 1 -23
+    0 art\ae_nabs1.png 462 376 09 54 32 1 -23
+    0 art\ae_nabs1.png 509 376 09 54 32 1 -23
+    0 art\ae_nabs1.png 556 376 09 54 32 1 -23
+    0 art\ae_nabs1.png 603 376 09 54 32 1 -23
+    0 art\ae_nabs1.png 650 376 09 31 64 -31 0
+    0 art\ae_nabs1.png 5 435 09 54 64 -31 -23
+    0 art\ae_nabs1.png 84 435 09 54 64 -31 -23
+    0 art\ae_nabs1.png 163 435 09 54 64 -31 -23
+    0 art\ae_nabs1.png 242 435 09 54 64 -31 -23
+  
+// Action 0 to set properties: 
+    0 * 0	 00 07 // Action 0, Feature 07
+                 07 // Properties to change
+                 01 // Change properties for how many ID's
+                 BUILDING_ID // ID
+                 08 4A // Substitute type
+                 09 06 // Building flags
+                 0A 0A 27 // Set years availible
+                 10 20 4E // Local authority rating decrease
+                 11 64 // Removal cost multiplier
+                 13 0C 38 // Set availibility mask
+                 18 04 // Probability
+                 1D 04  // Set prop 1D to 4
+
+// Action 4 to set name:  
+    0 * 0	 04 07  // Action 4, Feature 7
+                 9F // Language ID
+                 01 // Number of strings to change
+                 BUILDING_ID C9 // Offset
+                 "Large Flats" 00 // String
+                 
+// Action 2 chain:
+#include "action2chains\brownstone.hnfo"
+
+
+// Assign last action2 to id.35:  
+    0 * 0	 03 07 01 BUILDING_ID 00 35 00 
+  
+// Fin

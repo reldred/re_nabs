@@ -1,0 +1,35 @@
+// Small Building 2 - Small Flats
+
+// Action 1:
+0 * 0		01 07 06 FF 01 00 
+   
+// Real Sprites:
+0 art\ae_nabs1.png 637 55 09 41 64 -31 -10
+0 art\ae_nabs1.png 716 55 09 39 64 -31 -8
+0 art\ae_nabs1.png 5 120 09 53 64 -31 -22
+0 art\ae_nabs1.png 84 120 09 53 64 -31 -22
+0 art\ae_nabs1.png 163 120 09 32 64 -31 -1
+0 art\ae_nabs1.png 242 120 09 52 64 -31 -22
+
+// Action 0 to set properties:   
+#include "action0s\smallbuildings.hnfo"
+
+// Action 4 to set name:
+0 * 0		04 07 // Action 4, Feature 7
+		9F // Language ID
+		01 // Number of strings to change
+		BUILDING_ID C9 // Offset
+		"Small Building 02" 00  // String
+
+// Action 2 chain:
+#include "action2chains\smallbuildings.hnfo"
+
+// Assign last action2 to id.2:
+0 * 0		03 07 // Action 3, Feature 07
+		01 // 1 id associated
+		BUILDING_ID // id.2
+		00 // cargotype, not used innit
+		11 // last action2 setid
+		00 // default setid
+   
+// Fin

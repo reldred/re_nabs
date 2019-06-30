@@ -1,0 +1,40 @@
+// School (N)
+// Action 1:
+    0 * 0	 01 07 06 FF 01 00 
+
+// Real Sprites:
+    0 art\ae_nabs1.png 5 178 09 36 64 -31 -5
+    0 art\ae_nabs1.png 84 178 09 42 63 -31 -11
+    0 art\ae_nabs1.png 162 178 09 51 64 -31 -20
+    0 art\ae_nabs1.png 241 178 09 44 59 -31 -13
+    0 art\ae_nabs1.png 315 178 09 40 64 -31 -9
+    0 art\ae_nabs1.png 394 178 09 44 64 -31 -13
+
+// Action 0 to set properties:  
+0 * 0		00 07 // Action 0, Feature 7
+		08 // Properties to change
+		01 // Change properties for how many ID's
+		BUILDING_ID // ID
+		08 42 // Substitute type
+		09 08 // Building flags
+		0A 0A 32 // Set years availible
+		10 C8 AF // LA Rating Decrease for Removal
+		11 9B // Removal Cost Multiplier
+		13 03 38 // Set availibility mask
+		18 04 // Probability
+		1D 04 // Set prop 1D to 4
+  
+// Action 4 to set name:
+0 * 0		04 07 // Action 4, Feature 7
+		9F // Language ID
+		01 // Number of strings to change
+		BUILDING_ID C9 // Offset
+		"School" 00  // String
+
+// Action 2 Chain
+#include "action2chains\school.hnfo"
+
+// Assign last action2 to id.25:
+0 * 0		03 07 01 BUILDING_ID 00 25 00 
+
+// Fin

@@ -1,4 +1,5 @@
 // Small House 2 - Grey roof, small corner shops
+
 // Action 1:
 	0 * 0	 01 07 06 FF 01 00
 
@@ -14,7 +15,7 @@
 	0 * 0	 00 07 // Action 0, Feature 07
 	05 // Properties to Change
 		01 // Change properties for how many ID's
-		01 // ID
+		BUILDING_ID // ID
 		08 2E // Substitute type
 		09 01 // Building flags
 		0A 0A FF // Set years availible
@@ -27,7 +28,7 @@
     0 * 0	 04 07  // Action 4, Feature 7
                  9F // Language ID
                  01 // Number of strings to change
-                 07 C9 // Offset
+                 BUILDING_ID C9 // Offset
                  "Suburban Shop 01" 00 // String
                  
 // Action 2 Chain:
@@ -126,7 +127,7 @@
 // Assign last action2 to id.2:
 	0 * 0	03 07 // Action 3, Feature 07
 		01 // 1 id associated
-		01 // id.1
+		BUILDING_ID // id.1
 		00 // cargotype, not used innit
 		11 // last action2 setid
 		00 // default setid

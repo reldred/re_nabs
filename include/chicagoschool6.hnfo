@@ -46,12 +46,8 @@
  1347 art\ae_nabs4.png 567 837 09 96 64 -31 -65
  1348 art\ae_nabs4.png 646 837 09 99 64 -31 -68
 
- 0 * 0	 00 07 // action 0 feat 07
-         09 // Properties to set. Make sure this matches the other buildings and the include!!
-         01 // buildings to change
-         10 // ID number
-#include "chicagoschoolaction0.hnfo"
- 
+#include "action0s\chicagoschool.hnfo"
+  
  // Action 4 to set name:  
 0 * 0	 04 07  // Action 4, Feature 7
                  9F // Language ID
@@ -60,7 +56,7 @@
                  "Chicago School 06" 00 // String
                  
 // Action 2 Chain:
-#include "chicagoschoolaction2chain.hnfo"
+#include "action2chains\chicagoschool.hnfo"
 
 // action 3 to tie the action2 chain back to the building definition 
  1488 * 7	 03 07 01 10 00 A1 00 
