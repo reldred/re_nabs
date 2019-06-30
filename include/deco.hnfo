@@ -157,7 +157,7 @@
 		2B 00 // setid check how many are left
 		43 01 // callback 143 on destruct
 		43 01 // callback 143 on destruct
-		11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
+		2A 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 
 // Action 3
 2003 * 7	 03 07 01 BUILDING_ID 00 3C 00 
