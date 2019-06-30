@@ -35,21 +35,20 @@ compile : process
 #	$(GRFCODEC) $(NAME)w.nfo .
 #	@echo
 	@echo "Compiling OpenTTD/DOS GRF:"
-	$(GRFCODEC) -em 1 processed/$(NAME).nfo .
-	mv processed/$(NAME).grf bins
+	$(GRFCODEC) -em 1 $(NAME).nfo .
 	@echo
 	
 # NFORENUM process the Windows copy of the NFO
 process : preprocess
 	@echo "NFORENUM Processing:"
-	-$(NFORENUM) processed/$(NAME).nfo
+	-$(NFORENUM) $(NAME).nfo
 #	-cp $(NAME).nfo $(NAME)w.nfo
 	@echo
 	
 # GCC Preprocess the HNFO	
 preprocess :
 	@echo "GCC Preprocessing HNFO:"
-	$(CC) $(PREPROCESS) $(NAME).hnfo > processed/$(NAME).nfo
+	$(CC) $(PREPROCESS) $(NAME).hnfo > $(NAME).nfo
 	@echo
 
 # so grfcodec can handle pngs now... 
@@ -63,16 +62,16 @@ preprocess :
 clean:
 	@echo "Cleaning source tree:"
 	@echo "Remove backups:"
-	-rm processed/*.bak processed/*~
+	-rm *.bak *~
 #	@echo
 #	@echo "Remove .pcx:"
 #	-rm art/*.pcx
 	@echo
 	@echo "Remove .nfo:"
-	-rm processed/*.nfo
+	-rm *.nfo
 	@echo
 	@echo "Remove compiled .grf:"
-	-rm bins/*.grf
+	-rm *.grf
 
 # Installation process
 install:
@@ -81,4 +80,4 @@ install:
 #	-cp $(NAME)w.grf $(GRFDIR)/$(NAME)w.grf
 #	@echo
 	@echo "DOS/OpenTTD GRF:"
-	-cp bins/$(NAME).grf $(GRFDIR)/$(NAME).grf
+	-cp $(NAME).grf $(GRFDIR)/$(NAME).grf
