@@ -1,0 +1,62 @@
+// Chicago School NW THIN-WIDE 2
+ 1303 * 6	 01 07 2D FF 01 00 
+ 1304 art\ae_nabs4.png 84 421 09 38 64 -31 -7
+ 1305 art\ae_nabs4.png 163 421 09 73 64 -31 -42
+ 1306 art\ae_nabs4.png 242 421 09 89 64 -31 -58
+ 1307 art\ae_nabs4.png 321 421 09 89 64 -31 -58
+ 1308 art\ae_nabs4.png 400 421 09 31 64 -31 0
+ 1309 art\ae_nabs4.png 479 421 09 86 65 -32 -55
+ 1310 art\ae_nabs4.png 559 421 09 86 65 -32 -55
+ 1311 art\ae_nabs4.png 639 421 09 86 64 -31 -55
+ 1312 art\ae_nabs4.png 718 421 09 99 64 -31 -68
+ 1313 art\ae_nabs4.png 5 525 09 85 66 -32 -54
+ 1314 art\ae_nabs4.png 86 525 09 85 66 -32 -54
+ 1315 art\ae_nabs4.png 167 525 09 84 65 -31 -53
+ 1316 art\ae_nabs4.png 247 525 09 98 65 -31 -68
+ 1317 art\ae_nabs4.png 327 525 09 88 66 -32 -57
+ 1318 art\ae_nabs4.png 408 525 09 88 66 -32 -57
+ 1319 art\ae_nabs4.png 489 525 09 88 65 -31 -57
+ 1320 art\ae_nabs4.png 569 525 09 99 65 -31 -68
+ 1321 art\ae_nabs4.png 649 525 09 93 66 -32 -62
+ 1322 art\ae_nabs4.png 5 629 09 93 65 -32 -62
+ 1323 art\ae_nabs4.png 85 629 09 93 65 -31 -62
+ 1324 art\ae_nabs4.png 165 629 09 99 65 -31 -68
+ 1325 art\ae_nabs4.png 245 629 09 96 65 -32 -65
+ 1326 art\ae_nabs4.png 325 629 09 96 65 -32 -65
+ 1327 art\ae_nabs4.png 405 629 09 96 64 -31 -65
+ 1328 art\ae_nabs4.png 484 629 09 99 64 -31 -68
+ 1329 art\ae_nabs4.png 563 629 09 86 65 -32 -55
+ 1330 art\ae_nabs4.png 643 629 09 86 65 -32 -55
+ 1331 art\ae_nabs4.png 5 733 09 86 64 -31 -55
+ 1332 art\ae_nabs4.png 84 733 09 99 64 -31 -68
+ 1333 art\ae_nabs4.png 163 733 09 85 66 -32 -54
+ 1334 art\ae_nabs4.png 244 733 09 85 66 -32 -54
+ 1335 art\ae_nabs4.png 325 733 09 84 65 -31 -53
+ 1336 art\ae_nabs4.png 405 733 09 99 65 -31 -68
+ 1337 art\ae_nabs4.png 485 733 09 88 66 -32 -57
+ 1338 art\ae_nabs4.png 566 733 09 88 66 -32 -57
+ 1339 art\ae_nabs4.png 647 733 09 88 65 -31 -57
+ 1340 art\ae_nabs4.png 5 837 09 99 65 -31 -68
+ 1341 art\ae_nabs4.png 85 837 09 93 66 -32 -62
+ 1342 art\ae_nabs4.png 166 837 09 93 66 -32 -62
+ 1343 art\ae_nabs4.png 247 837 09 93 65 -31 -62
+ 1344 art\ae_nabs4.png 327 837 09 99 65 -31 -68
+ 1345 art\ae_nabs4.png 407 837 09 96 65 -32 -65
+ 1346 art\ae_nabs4.png 487 837 09 96 65 -32 -65
+ 1347 art\ae_nabs4.png 567 837 09 96 64 -31 -65
+ 1348 art\ae_nabs4.png 646 837 09 99 64 -31 -68
+
+#include "action0s\chicagoschool.hnfo"
+  
+ // Action 4 to set name:  
+0 * 0	 04 07  // Action 4, Feature 7
+                 9F // Language ID
+             01 // Number of strings to change
+                 10 C9 // Offset
+                 "Chicago School 06" 00 // String
+                 
+// Action 2 Chain:
+#include "action2chains\chicagoschool.hnfo"
+
+// action 3 to tie the action2 chain back to the building definition 
+ 1488 * 7	 03 07 01 BUILDING_ID 00 A1 00 

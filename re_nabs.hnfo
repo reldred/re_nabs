@@ -9,7 +9,7 @@
 0 * 0		08 05
 		"RJE" 01 
 		"North American Buildings Set" 00 
-		"Artwork by Oz, lifeblood, reldred. Coding by reldred; the belligerent formerly known as Aegir. reldreds North American Building Set is the continuation of Aegir's original NABS. For support go bug reldred on #openttd. Special thanks to patchman, dalestan, csaboka, eis_os and all the other #tycoon OG's I've forgotten from whom I owe a great deal and have learnt even more." 00
+		"Coded by reldred (the belligerent formerly known as Aegir). Artwork by Oz, lifeblood, reldred. reldreds North American Building Set is the continuation of Aegir's original NABS. For support go bug reldred on #openttd. Special thanks to patchman, dalestan, csaboka, eis_os and all the other #tycoon OG's I've forgotten from whom I owe a great deal and have learnt even more." 00
 
 // ID 00 Small House 1:
 #define BUILDING_ID 00
@@ -119,4 +119,74 @@
 #define BUILDING_ID 1E
 #include "include/departmentstoresub3.hnfo"
 
+// Special ones for scenario editor after 1950
+// ID 1F - 20 Brownstone NW (North and South)
+#define BUILDING_ID 1F
+#include "include/SpecialNonSpawns/brownstonenwmain.hnfo"
+#define BUILDING_ID 20
+#include "include/SpecialNonSpawns/brownstonenwsub1.hnfo"
+
+// ID 21 - 22 Brownstone NE (North and South)
+#define BUILDING_ID 21
+#include "include/SpecialNonSpawns/brownstonenemain.hnfo"
+#define BUILDING_ID 22
+#include "include/SpecialNonSpawns/brownstonenesub1.hnfo"
+
+// ID 23 Chicago School NE THIN-WIDE 1
+#define BUILDING_ID 23
+#include "include/SpecialNonSpawns/chicagoschool1.hnfo"
+
+// ID 24 Chicago School NE THIN-WIDE 2
+#define BUILDING_ID 24
+#include "include/SpecialNonSpawns/chicagoschool2.hnfo"
+
+// ID 25 Chicago School NE WIDE-THIN 1
+#define BUILDING_ID 25
+#include "include/SpecialNonSpawns/chicagoschool3.hnfo"
+
+// ID 26 Chicago School NE WIDE-THIN 2
+#define BUILDING_ID 26
+#include "include/SpecialNonSpawns/chicagoschool4.hnfo" 
+ 
+// ID 27 Chicago School NW THIN-WIDE 1
+#define BUILDING_ID 27
+#include "include/SpecialNonSpawns/chicagoschool5.hnfo"
+
+// ID 28 Chicago School NW THIN-WIDE 2
+#define BUILDING_ID 28
+#include "include/SpecialNonSpawns/chicagoschool6.hnfo" 
+ 
+// ID 29 Chicago School NW WIDE-THIN 1
+#define BUILDING_ID 29
+#include "include/SpecialNonSpawns/chicagoschool7.hnfo"
+ 
+// ID 2A Chicago School NW WIDE-THIN 2
+#define BUILDING_ID 2A
+#include "include/SpecialNonSpawns/chicagoschool8.hnfo"
+
+// ID 2B - 2C Large Deco Building (North and South)
+#define BUILDING_ID 2B
+#include "include/SpecialNonSpawns/largedecomain.hnfo"
+#define BUILDING_ID 2C
+#include "include/SpecialNonSpawns/largedecosub1.hnfo"
+
+// ID 2D Deco Buildings
+#define BUILDING_ID 2D
+#include "include/SpecialNonSpawns/deco.hnfo"
+
+// ID 2E - 2F Flatiron (North and South)
+#define BUILDING_ID 2E
+#include "include/SpecialNonSpawns/flatironmain.hnfo"
+#define BUILDING_ID 2F
+#include "include/SpecialNonSpawns/flatironsub1.hnfo"
+
+// ID 30 - 33 Department Store (North, East, West and South)
+#define BUILDING_ID 30
+#include "include/SpecialNonSpawns/departmentstoremain.hnfo"
+#define BUILDING_ID 31
+#include "include/SpecialNonSpawns/departmentstoresub1.hnfo"
+#define BUILDING_ID 32
+#include "include/SpecialNonSpawns/departmentstoresub2.hnfo"
+#define BUILDING_ID 33
+#include "include/SpecialNonSpawns/departmentstoresub3.hnfo"
 // Fin

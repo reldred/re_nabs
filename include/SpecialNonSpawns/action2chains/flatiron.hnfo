@@ -1,0 +1,68 @@
+// Action 2 Chain:
+0 * 0		02 07 00 00 54 0F 00 00 00 00 00 80 00 00 10 10 04 
+0 * 0		02 07 01 00 54 0F 00 00 01 00 00 80 00 00 10 10 04 
+0 * 0		02 07 02 00 54 0F 00 00 02 00 00 80 00 00 10 10 04 
+0 * 0		02 07 03 00 04 00 00 80 03 00 00 80 00 00 10 10 04 
+0 * 0		02 07 04 00 04 00 00 80 05 00 00 80 00 00 10 10 04 
+
+0 * 0		02 07 10 81 43 00 FF 02 03 00 00 03 04 00 04 04 03 00 
+0 * 0		02 07 11 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 10 00 
+
+// Check to see if one has already been built
+0 * 0		02 07 // Act 2 feat 7
+		14 // setid
+		81 // town var
+		61 // how many of a building id exist
+		BUILDING_ID // the building id to check, ours!
+		00 // shift
+		FF // and mask
+		02 // ranges to follow
+		01 FF // setid to use (protec)
+		00 // minval
+		01 // maxval		
+		00 FF // setid to use (unprotec)
+		02 // minval
+		FF // maxval
+		00 FF // setid to use (unprotec) 
+
+// Check to see if one has already been built
+0 * 0		02 07 // Act 2 feat 7
+		15 // setid
+		81 // town var
+		61 // how many of a building id exist
+		BUILDING_ID // the building id to check, ours!
+		00 // shift
+		FF // and mask
+		01 // ranges to follow
+		00 FF // setid to use (cockblock)
+		01 // minval
+		FF // maxval
+		01 FF // setid to use (allow building)
+
+0 * 0		02 07 // Act 2 feat 7
+		16 // setid
+		86 // another type of town var I forget which
+		82 // how many people exist
+		00 // shift
+		FF FF // and mask
+		01 // ranges to follow
+		00 FF // setid to use (cockblock)
+		00 00 // minval
+		B7 0B // maxval
+		15 00 // setid to use (goto the check for how many been built)
+
+// Current Callback  
+0 * 0		02 07 // act 2 feat 7
+		1C // setid
+		85 // type, variable of building
+		0C // variable 0c current callback
+		00 // shift
+		FF FF // and mask
+		02 // ranges to follow
+		16 00 // setid
+		17 00 // callback 17 on build
+		17 00 // callback 17 on build
+		14 00 // setid check how many are left
+		43 01 // callback 143 on destruct
+		43 01 // callback 143 on destruct
+		11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.

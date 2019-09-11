@@ -1,0 +1,35 @@
+// Department Store (E)
+
+// Action 1
+0 * 0		01 07 06 FF 01 00 
+
+0 art\departmentstore.png 5 109 09 35 64 -31 -4
+0 art\departmentstore.png 85 109 09 80 64 -31 -49
+0 art\departmentstore.png 165 109 09 78 64 -31 -47
+0 art\departmentstore.png 245 109 09 78 64 -31 -47
+0 art\departmentstore.png 319 109 09 31 64 -31 0
+0 art\departmentstore.png 394 109 09 78 64 -31 -47
+
+// Action 0
+0 * 0		00 07 
+		05
+		01 
+		BUILDING_ID 
+		08 21 
+		10 60 EA 
+		11 FF
+		19 03
+		1D 04
+
+// Action 4 to set name:  
+0 * 0		04 07  // Action 4, Feature 7
+		9F // Language ID
+		01 // Number of strings to change
+		BUILDING_ID C9 // Offset
+		"Department Store East" 00 // String
+                 
+/// Action 2 Chain:
+#include "action2chains\departmentstore.hnfo"                 
+
+// Action 3
+0 * 0		03 07 01 BUILDING_ID 00 1C 00

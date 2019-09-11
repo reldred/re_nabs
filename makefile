@@ -13,7 +13,7 @@
 # Paths for our tools
 GRFCODEC = ../../Executables/grfcodec.exe -e
 NFORENUM = ../../Executables/nforenum.exe -b +
-GRFDIR = ../../../../../DMZ/Software/Games/OpenTTD\ Nightly/newgrf/
+GRFDIR = ../../../../../DMZ/Software/Games/JGR\ Patchpack/newgrf/
 
 # GCC Settings:
 CC = gcc

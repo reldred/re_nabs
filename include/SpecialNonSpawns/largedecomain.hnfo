@@ -1,0 +1,38 @@
+// Large Deco Building (NW)
+
+0 * 0		01 07 06 FF 01 00
+0 art\ae_nabs6.png 644 118 09 31 64 -31 0
+0 art\ae_nabs6.png 5 231 09 112 64 -31 -81
+0 art\ae_nabs6.png 84 231 09 158 64 -31 -127
+0 art\ae_nabs6.png 163 231 09 155 64 -31 -124
+0 art\ae_nabs6.png 242 231 09 31 64 -31 0
+0 art\ae_nabs6.png 321 231 09 155 64 -31 -124
+
+// Action 0
+0 * 0		00 07 
+		0A 
+		01 
+		BUILDING_ID 
+		08 42 
+		09 0a 
+		0A 28 FF 
+		10 60 EA 
+		11 FF 
+		13 10 38 
+		14 01 
+		18 20 
+		19 03
+		1D 04 
+
+// Action 4 to set name:  
+0 * 0		04 07  // Action 4, Feature 7
+		9F // Language ID
+		01 // Number of strings to change
+		BUILDING_ID C9 // Offset
+		"Large Deco North" 00 // String
+                 
+// Action 2 Chain:
+#include "action2chains\largedeco.hnfo"
+
+// Action 3
+0 * 0		03 07 01 BUILDING_ID 00 1C 00

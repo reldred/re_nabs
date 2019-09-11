@@ -18,7 +18,7 @@
                  BUILDING_ID // ID
                  08 2E // Substitute type
                  09 01 // Building flags
-                 0A 0A FF // Set years availible
+                 0A 0A 27 // Set years availible
                  13 03 38 // Set availibilty mask
                  1D 04 // Set prop 1D to 4
 

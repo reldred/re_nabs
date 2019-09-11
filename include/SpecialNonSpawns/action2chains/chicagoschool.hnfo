@@ -1,0 +1,228 @@
+// Stuff happens. Don't try to comprehend, quick way to a whole lot of brain trauma...                 
+  
+// Construction stages, ground tile
+0 * 0		02 07 00 00 04 00 00 80 00 00 00 80 00 00 10 10 05 
+0 * 0		02 07 01 00 04 00 00 80 01 00 00 80 00 00 10 10 10 
+0 * 0		02 07 02 00 04 00 00 80 02 00 00 80 00 00 10 10 10 
+0 * 0		02 07 03 00 04 00 00 80 03 00 00 80 00 00 10 10 10
+
+// Row 1 
+0 * 0		02 07 04 00 04 00 00 80 05 00 00 80 00 00 10 10 10 
+0 * 0		02 07 05 00 04 00 00 80 19 00 00 80 00 00 10 10 10 
+0 * 0		02 07 64 81 43 00 FF 02 04 00 00 03 05 00 04 04 03 00 
+0 * 0		02 07 65 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 64 00
+ 
+0 * 0		02 07 0A 00 04 00 00 80 06 00 00 80 00 00 10 10 10 
+0 * 0		02 07 0B 00 04 00 00 80 1A 00 00 80 00 00 10 10 10 
+0 * 0		02 07 66 81 43 00 FF 02 0A 00 00 03 0B 00 04 04 03 00 
+0 * 0		02 07 67 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 66 00
+ 
+0 * 0		02 07 10 00 04 00 00 80 07 00 00 80 00 00 10 10 10 
+0 * 0		02 07 11 00 04 00 00 80 1B 00 00 80 00 00 10 10 10 
+0 * 0		02 07 68 81 43 00 FF 02 10 00 00 03 11 00 04 04 03 00 
+0 * 0		02 07 69 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 68 00
+ 
+0 * 0		02 07 16 00 04 00 00 80 08 00 00 80 00 00 10 10 10 
+0 * 0		02 07 17 00 04 00 00 80 1C 00 00 80 00 00 10 10 10 
+0 * 0		02 07 6A 81 43 00 FF 02 16 00 00 03 17 00 04 04 03 00 
+0 * 0		02 07 6B 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 6A 00 
+  
+// Row 2:
+0 * 0		02 07 1C 00 04 00 00 80 09 00 00 80 00 00 10 10 10 
+0 * 0		02 07 1D 00 04 00 00 80 1D 00 00 80 00 00 10 10 10 
+0 * 0		02 07 6C 81 43 00 FF 02 1C 00 00 03 1D 00 04 04 03 00 
+0 * 0		02 07 6D 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 6C 00
+ 
+0 * 0		02 07 22 00 04 00 00 80 0A 00 00 80 00 00 10 10 10 
+0 * 0		02 07 23 00 04 00 00 80 1E 00 00 80 00 00 10 10 10 
+0 * 0		02 07 6E 81 43 00 FF 02 22 00 00 03 23 00 04 04 03 00 
+0 * 0		02 07 6F 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 6E 00
+
+0 * 0		02 07 28 00 04 00 00 80 0B 00 00 80 00 00 10 10 10 
+0 * 0		02 07 29 00 04 00 00 80 1F 00 00 80 00 00 10 10 10 
+0 * 0		02 07 70 81 43 00 FF 02 28 00 00 03 29 00 04 04 03 00 
+0 * 0		02 07 71 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 70 00
+ 
+0 * 0		02 07 2E 00 04 00 00 80 0C 00 00 80 00 00 10 10 10 
+0 * 0		02 07 2F 00 04 00 00 80 20 00 00 80 00 00 10 10 10 
+0 * 0		02 07 72 81 43 00 FF 02 2E 00 00 03 2F 00 04 04 03 00 
+0 * 0		02 07 73 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 72 00 
+  
+// Row 3
+0 * 0		02 07 34 00 04 00 00 80 0D 00 00 80 00 00 10 10 10 
+0 * 0		02 07 35 00 04 00 00 80 21 00 00 80 00 00 10 10 10 
+0 * 0		02 07 74 81 43 00 FF 02 34 00 00 03 35 00 04 04 03 00 
+0 * 0		02 07 75 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 74 00
+ 
+0 * 0		02 07 3A 00 04 00 00 80 0E 00 00 80 00 00 10 10 10 
+0 * 0		02 07 3B 00 04 00 00 80 22 00 00 80 00 00 10 10 10 
+0 * 0		02 07 76 81 43 00 FF 02 3A 00 00 03 3B 00 04 04 03 00 
+0 * 0		02 07 77 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 76 00
+ 
+0 * 0		02 07 40 00 04 00 00 80 0F 00 00 80 00 00 10 10 10 
+0 * 0		02 07 41 00 04 00 00 80 23 00 00 80 00 00 10 10 10 
+0 * 0		02 07 78 81 43 00 FF 02 40 00 00 03 41 00 04 04 03 00 
+0 * 0		02 07 79 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 78 00
+ 
+0 * 0		02 07 46 00 04 00 00 80 10 00 00 80 00 00 10 10 10 
+0 * 0		02 07 47 00 04 00 00 80 24 00 00 80 00 00 10 10 10 
+0 * 0		02 07 7A 81 43 00 FF 02 46 00 00 03 47 00 04 04 03 00 
+0 * 0		02 07 7B 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 7A 00
+ 
+  
+// Row 4
+0 * 0		02 07 4C 00 04 00 00 80 11 00 00 80 00 00 10 10 10 
+0 * 0		02 07 4D 00 04 00 00 80 25 00 00 80 00 00 10 10 10 
+0 * 0		02 07 7C 81 43 00 FF 02 4C 00 00 03 4D 00 04 04 03 00 
+0 * 0		02 07 7D 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 7C 00
+ 
+0 * 0		02 07 52 00 04 00 00 80 12 00 00 80 00 00 10 10 10 
+0 * 0		02 07 53 00 04 00 00 80 26 00 00 80 00 00 10 10 10 
+0 * 0		02 07 7E 81 43 00 FF 02 52 00 00 03 53 00 04 04 03 00 
+0 * 0		02 07 7F 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 7E 00
+ 
+0 * 0		02 07 58 00 04 00 00 80 13 00 00 80 00 00 10 10 10 
+0 * 0		02 07 59 00 04 00 00 80 27 00 00 80 00 00 10 10 10 
+0 * 0		02 07 80 81 43 00 FF 02 58 00 00 03 59 00 04 04 03 00 
+0 * 0		02 07 81 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 80 00
+ 
+0 * 0		02 07 5E 00 04 00 00 80 14 00 00 80 00 00 10 10 10 
+0 * 0		02 07 5F 00 04 00 00 80 28 00 00 80 00 00 10 10 10 
+0 * 0		02 07 82 81 43 00 FF 02 5E 00 00 03 5F 00 04 04 03 00 
+0 * 0		02 07 83 81 40 00 03 03 00 00 00 00 01 00 01 01 02 00 02 02 82 00 
+
+// random varact2 to pick the building variant to spawn
+0 * 0		02 07 // act 2 feat 7
+		99 // setid
+		80 // lolol so random XD
+		00 // no triggers
+		00 // first random bit to use
+		10 // 16 choices total
+		83 00 // these point at the construction stage setids for each varient.
+		81 00 // why are there so many varients?
+		7F 00 // who can know these things.
+		7D 00 // how did Oz maintain sanity even drawing them?
+		7B 00 // is there a better way of handling these varients?
+		79 00 // the answer is probably worse than the current situation we're in
+		77 00 
+		75 00 
+		73 00 
+		71 00 
+		6F 00 
+		6D 00 
+		6B 00 
+		69 00 
+		67 00 
+		65 00 
+
+// varact2 to restrict building until a certain population
+0 * 0		02 07 
+		9A // setid
+		86 // var of city
+		82 // var town pop
+		00 FF FF // varadj
+		02 // numranges
+		00 FF // setid
+		00 00 // minval
+		DB 05 // maxval
+		01 FF // setid
+		DC 05 // minval
+		FF FF // maxval
+		01 FF // default setid
+		
+// Check to see how many are left, we'll allow one of each to survive for a max of 8
+0 * 0		02 07 // Act 2 feat 7
+		A6 // setid
+		81 // town var
+		61 // how many of a building id exist
+		BUILDING_ID // the building id to check, ours!
+		00 // shift
+		FF // and mask
+		02 // ranges to follow
+		01 FF // setid to use (protec)
+		00 // minval
+		01 // maxval		
+		00 FF // setid to use (unprotec)
+		02 // minval
+		FF // maxval
+		00 FF // setid to use (unprotec) 
+  
+// random chance 25% of protect
+0 * 0		02 07 // act 2 feat 7
+		A7 // setid
+		80 // random callback
+		00 // no triggers
+		00 // first random bit to use
+		04 // number of choices
+		01 FF // protect
+		A6 00 // unprotect if there's more than 1 left
+		A6 00 // unprotect if there's more than 1 left
+		A6 00 // unprotect if there's more than 1 left
+
+// random chance 50% of protect
+0 * 0		02 07 // act 2 feat 7
+		A8 // setid
+		80 // random callback
+		00 // no triggers
+		00 // first random bit to use
+		02 // number of choices
+		01 FF // protec
+		A6 00 // unprotect if there's more than 1 left
+
+// random chance 75% of protect
+0 * 0		02 07 // act 2 feat 7
+		A9 // setid
+		80 // random callback
+		00 // no triggers
+		00 // first random bit to use
+		04 // number of choices
+		01 FF // protect
+		01 FF // protect
+		01 FF // protect
+		A6 00 // unprotect if there's more than 1 left
+
+// years since 1920
+0 * 0		02 07 // act 2 feat 7
+		A0 // setid
+		81 // global var
+		01 // var town pop
+		00 FF // varadj
+		05 // numranges
+
+		01 FF // setid protec 0%
+		00 // minval eightyone
+		14 // maxval infinity
+
+		A7 00 // setid protec 25%
+		15 // minval zero
+		28 // maxval forty
+
+		A8 00 // setid protect 50%
+		29 // minval fortyone
+		3C // maxval sixty
+
+		A9 00 // setid protec 75%
+		3D // minval sixtyone
+		50 // maxval eighty
+
+		01 FF // setid protec 100%
+		51 // minval eightyone
+		FF // maxval infinity
+
+		01 FF // default setid
+
+// Current Callback  
+0 * 0		02 07 // act 2 feat 7
+		A1 // setid
+		85 // type, variable of building
+		0C // variable 0c current callback
+		00 // shift
+		FF FF // and mask
+		02 // ranges to follow
+		9A 00 // setid
+		17 00 // callback 17 on build
+		17 00 // callback 17 on build
+		A0 00 // setid random chance
+		43 01 // callback 143 on destruct
+		43 01 // callback 143 on destruct
+		99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
