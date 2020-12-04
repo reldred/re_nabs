@@ -35,7 +35,7 @@
                  "Large Flats" 00 // String 
                              
 // Action 2 chain:
-#include "action2chains\brownstone.hnfo"
+#include "action2chains/brownstone.hnfo"
 
 // Assign last action2 to id.35:  
   372 * 7	 03 07 01 BUILDING_ID 00 35 00

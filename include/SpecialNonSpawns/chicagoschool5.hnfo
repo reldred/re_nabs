@@ -46,7 +46,7 @@
  1161 art\ae_nabs4.png 647 317 09 96 64 -31 -65
  1162 art\ae_nabs4.png 5 421 09 99 64 -31 -68
 
-#include "action0s\chicagoschool.hnfo"
+#include "action0s/chicagoschool.hnfo"
   
  // Action 4 to set name:  
 0 * 0	 04 07  // Action 4, Feature 7
@@ -56,7 +56,7 @@
                  "Chicago School 05" 00 // String
                  
 // Action 2 Chain:
-#include "action2chains\chicagoschool.hnfo"
+#include "action2chains/chicagoschool.hnfo"
 
 // action 3 to tie the action2 chain back to the building definition 
  1302 * 7	 03 07 01 BUILDING_ID 00 A1 00 

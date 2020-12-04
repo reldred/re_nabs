@@ -29,7 +29,7 @@
 		"Flatiron South" 00 // String
                  
 // Action 2 Chain		 
-#include "action2chains\flatiron.hnfo"
+#include "action2chains/flatiron.hnfo"
 
 // Action 3
 0 * 0		03 07 01 BUILDING_ID 00 1C 00 

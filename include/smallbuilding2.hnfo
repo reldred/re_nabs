@@ -12,7 +12,7 @@
 0 art\ae_nabs1.png 242 120 09 52 64 -31 -22
 
 // Action 0 to set properties:   
-#include "action0s\smallbuildings.hnfo"
+#include "action0s/smallbuildings.hnfo"
 
 // Action 4 to set name:
 0 * 0		04 07 // Action 4, Feature 7
@@ -22,7 +22,7 @@
 		"Small Building 02" 00  // String
 
 // Action 2 chain:
-#include "action2chains\smallbuildings.hnfo"
+#include "action2chains/smallbuildings.hnfo"
 
 // Assign last action2 to id.2:
 0 * 0		03 07 // Action 3, Feature 07
