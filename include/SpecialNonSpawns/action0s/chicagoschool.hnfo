@@ -1,5 +1,5 @@
 0 * 0			00 07 // action 0 feat 07
-		09 // Properties to set. Make sure this matches the other buildings and the include!!
+		0A // Properties to set. Make sure this matches the other buildings and the include!!
  		01 // buildings to change
 		BUILDING_ID // ID number
 		08 34 
@@ -10,4 +10,5 @@
 		13 10 38 
 		14 01 
 		18 10 
+		19 03
 		1D 04 
