@@ -12,17 +12,19 @@
 
 // Action 0 to set properties:  
 0 * 0		00 07 // Action 0, Feature 7
-		08 // Properties to change
+		09 // Properties to change
 		01 // Change properties for how many ID's
 		BUILDING_ID // ID
 		08 42 // Substitute type
 		09 08 // Building flags
-		0A 0A 32 // Set years availible
+//		0A 00 1D // Set years availible
 		10 C8 AF // LA Rating Decrease for Removal
 		11 9B // Removal Cost Multiplier
 		13 03 38 // Set availibility mask
-		18 04 // Probability
+		18 02 // Probability
 		1D 04 // Set prop 1D to 4
+		21 67 07
+		22 9D 07
   
 // Action 4 to set name:
 0 * 0		04 07 // Action 4, Feature 7

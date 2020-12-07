@@ -8,12 +8,12 @@
  1914 art\ae_nabs6.png 404 407 09 31 64 -31 0
  1915 art\ae_nabs6.png 483 407 09 153 66 -32 -122
  1916 * 24	00 07 
-		0A
+		0B
 		01 
 		BUILDING_ID 
 		08 34 
 		09 01 
-		0A 0A 27 
+//		0A 00 1D 
 		10 60 EA 
 		11 FF 
 		13 10 38 
@@ -21,6 +21,8 @@
 		18 08
 		19 02 // Flat out protected.
 		1D 04
+		21 67 07
+		22 9D 07
 
  // Action 4 to set name:  
     0 * 0	 04 07  // Action 4, Feature 7

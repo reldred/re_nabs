@@ -24,7 +24,7 @@
                  BUILDING_ID // ID
                  08 4A // Substitute type
                  09 06 // Building flags
-                 0A 28 FF // Set years availible
+                 0A 1E FF // Set years availible
                  10 20 4E // Local authority rating decrease
                  11 64 // Removal cost multiplier
                  13 0C 38 // Set availibility mask

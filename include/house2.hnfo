@@ -13,14 +13,16 @@
 
 	// Action 0 to set properties:
 	0 * 0	 00 07 // Action 0, Feature 07
-	05 // Properties to Change
+	06 // Properties to Change
 		01 // Change properties for how many ID's
 		BUILDING_ID // ID
 		08 2E // Substitute type
 		09 01 // Building flags
-		0A 0A 27 // Set years availible
+//		0A 00 1D // Set years availible
 		13 03 38 // Set availibilty mask
 		1D 04 // Set prop 1D to 4
+		21 67 07
+		22 9D 07
 
 		
 		
