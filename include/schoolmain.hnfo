@@ -20,7 +20,7 @@
 //		0A 00 1D // Set years availible
 		10 C8 AF // LA Rating Decrease for Removal
 		11 9B // Removal Cost Multiplier
-		13 03 38 // Set availibility mask
+		13 03 78 // Set availibility mask
 		18 02 // Probability
 		1D 04 // Set prop 1D to 4
 		21 67 07

@@ -19,7 +19,7 @@
 		08 2E // Substitute type
 		09 01 // Building flags
 //		0A 00 1D // Set years availible
-		13 03 38 // Set availibilty mask
+		13 03 78 // Set availibilty mask
 		1D 04 // Set prop 1D to 4
 		21 67 07
 		22 9D 07
