@@ -1,12 +1,12 @@
 // Large Deco Building (NW)
 
 0 * 0		01 07 06 FF 01 00
-0 art\ae_nabs6.png 644 118 09 31 64 -31 0
-0 art\ae_nabs6.png 5 231 09 112 64 -31 -81
-0 art\ae_nabs6.png 84 231 09 158 64 -31 -127
-0 art\ae_nabs6.png 163 231 09 155 64 -31 -124
-0 art\ae_nabs6.png 242 231 09 31 64 -31 0
-0 art\ae_nabs6.png 321 231 09 155 64 -31 -124
+0 art/ae_nabs6.png 8bpp 644 118 64 31 -31 0 normal
+0 art/ae_nabs6.png 8bpp 5 231 64 112 -31 -81 normal
+0 art/ae_nabs6.png 8bpp 84 231 64 158 -31 -127 normal
+0 art/ae_nabs6.png 8bpp 163 231 64 155 -31 -124 normal
+0 art/ae_nabs6.png 8bpp 242 231 64 31 -31 0 normal
+0 art/ae_nabs6.png 8bpp 321 231 64 155 -31 -124 normal
 
 // Action 0
 0 * 0		00 07 

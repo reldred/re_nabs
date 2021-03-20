@@ -11,13 +11,13 @@
 
 # Macros:
 # Paths for our tools
-GRFCODEC = ../../Executables/grfcodec.exe -e
-NFORENUM = ../../Executables/nforenum.exe -b +
-GRFDIR = ../../../../../DMZ/Software/Games/JGR\ Patchpack/newgrf/
+GRFCODEC = grfcodec
+NFORENUM = nforenum -b +
+GRFDIR = ../../../../../REHI-GREEN/Software/Games/JGR\ Patchpack/newgrf/
 
 # GCC Settings:
 CC = gcc
-PREPROCESS = -E -C -P - <
+PREPROCESS = -nostdinc -E -C -P - <
 
 # Aliases for the set:
 NAME = re_nabs

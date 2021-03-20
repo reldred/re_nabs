@@ -3,12 +3,12 @@
 // Action 1
 0 * 0		01 07 06 FF 01 00 
 
-0 art\ae_nabs6.png 400 231 09 31 64 -31 0
-0 art\ae_nabs6.png 479 231 09 115 64 -31 -84
-0 art\ae_nabs6.png 558 231 09 171 64 -31 -140
-0 art\ae_nabs6.png 637 231 09 165 64 -31 -134
-0 art\ae_nabs6.png 716 231 09 31 64 -31 0
-0 art\ae_nabs6.png 5 407 09 165 64 -31 -134
+0 art/ae_nabs6.png 8bpp 400 231 64 31 -31 0 normal
+0 art/ae_nabs6.png 8bpp 479 231 64 115 -31 -84 normal
+0 art/ae_nabs6.png 8bpp 558 231 64 171 -31 -140 normal
+0 art/ae_nabs6.png 8bpp 637 231 64 165 -31 -134 normal
+0 art/ae_nabs6.png 8bpp 716 231 64 31 -31 0 normal
+0 art/ae_nabs6.png 8bpp 5 407 64 165 -31 -134 normal
 
 // Action 0
 0 * 0		00 07 

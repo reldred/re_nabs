@@ -3,12 +3,12 @@
 // Action 1
 0 * 0		01 07 06 FF 01 00
 
-0 art\departmentstore.png 5 308 09 31 64 -31 0
-0 art\departmentstore.png 85 308 09 31 64 -31 0
-0 art\departmentstore.png 163 308 09 31 64 -31 0
-0 art\departmentstore.png 243 308 09 31 64 -31 0
-0 art\departmentstore.png 316 308 09 31 64 -31 0
-0 art\departmentstore.png 392 308 09 31 64 -31 0
+0 art/departmentstore.png 8bpp 5 308 64 31 -31 0 normal
+0 art/departmentstore.png 8bpp 85 308 64 31 -31 0 normal
+0 art/departmentstore.png 8bpp 163 308 64 31 -31 0 normal
+0 art/departmentstore.png 8bpp 243 308 64 31 -31 0 normal
+0 art/departmentstore.png 8bpp 316 308 64 31 -31 0 normal
+0 art/departmentstore.png 8bpp 392 308 64 31 -31 0 normal
 
 // Action 0
 0 * 0		00 07 

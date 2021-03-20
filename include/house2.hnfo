@@ -4,12 +4,12 @@
 	0 * 0	 01 07 06 FF 01 00
 
 // Real Sprites:
-	0 art\house02.png 7 3 09 31 64 -31 0
-	0 art\house02.png 83 3 09 38 64 -31 -7
-	0 art\house02.png 159 3 09 33 64 -31 -2
-	0 art\house02.png 230 3 09 34 64 -31 -3
-	0 art\house02.png 306 3 09 31 64 -31 0
-	0 art\house02.png 376 3 09 34 64 -31 -3
+	0 art/house02.png 8bpp 7 3 64 31 -31 0 normal
+	0 art/house02.png 8bpp 83 3 64 38 -31 -7 normal
+	0 art/house02.png 8bpp 159 3 64 33 -31 -2 normal
+	0 art/house02.png 8bpp 230 3 64 34 -31 -3 normal
+	0 art/house02.png 8bpp 306 3 64 31 -31 0 normal
+	0 art/house02.png 8bpp 376 3 64 34 -31 -3 normal
 
 	// Action 0 to set properties:
 	0 * 0	 00 07 // Action 0, Feature 07
@@ -101,7 +101,7 @@
 		10 // Set ID
 		81 // Type (Lowest Byte of value accessed for house)
 		43 // Variable (Terrain Type)
-		00 FF // Varadjust (AND FF)
+		00 80 // Varadjust (AND FF)
 		02 // Nuber of ranges
 		// Range Checks:
 		03 00 // Use Set ID 3...
@@ -115,7 +115,7 @@
 		11 // Set ID
 		81 // Type (Lowest Byte of value accessed for house)
 		40 // Variable (Construction stages)
-		00 FF // Varadjust (AND FF)
+		00 80 // Varadjust (AND FF)
 		03 // Number of ranges
 		// Range Checks:
 		00 00 // Use Set ID 0...

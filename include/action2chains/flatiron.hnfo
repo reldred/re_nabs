@@ -17,13 +17,13 @@
 		00 // shift
 		FF // and mask
 		02 // ranges to follow
-		01 FF // setid to use (protec)
+		01 80 // setid to use (protec)
 		00 // minval
 		01 // maxval		
-		00 FF // setid to use (unprotec)
+		00 80 // setid to use (unprotec)
 		02 // minval
 		FF // maxval
-		00 FF // setid to use (unprotec) 
+		00 80 // setid to use (unprotec) 
 
 // Check to see if one has already been built
 0 * 0		02 07 // Act 2 feat 7
@@ -34,10 +34,10 @@
 		00 // shift
 		FF // and mask
 		01 // ranges to follow
-		00 FF // setid to use (cockblock)
+		00 80 // setid to use (cockblock)
 		01 // minval
 		FF // maxval
-		01 FF // setid to use (allow building)
+		01 80 // setid to use (allow building)
 
 0 * 0		02 07 // Act 2 feat 7
 		16 // setid
@@ -46,7 +46,7 @@
 		00 // shift
 		FF FF // and mask
 		01 // ranges to follow
-		00 FF // setid to use (cockblock)
+		00 80 // setid to use (cockblock)
 		00 00 // minval
 		B7 0B // maxval
 		15 00 // setid to use (goto the check for how many been built)

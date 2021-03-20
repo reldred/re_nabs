@@ -4,18 +4,18 @@
     0 * 0	 01 07 0C FF 01 00
 
 // Real Sprites:      
-    0 art\ae_nabs1.png 321 435 09 63 64 -31 -32
-    0 art\ae_nabs1.png 400 435 09 70 64 -31 -39
-    0 art\ae_nabs1.png 479 435 09 70 64 -31 -39
-    0 art\ae_nabs1.png 558 435 09 70 64 -31 -39
-    0 art\ae_nabs1.png 637 435 09 70 64 -31 -39
-    0 art\ae_nabs1.png 716 435 09 70 64 -31 -39
-    0 art\ae_nabs1.png 5 510 09 70 64 -31 -39
-    0 art\ae_nabs1.png 84 510 09 31 64 -31 0
-    0 art\ae_nabs1.png 163 510 09 54 64 -31 -23
-    0 art\ae_nabs1.png 242 510 09 54 64 -31 -23
-    0 art\ae_nabs1.png 321 510 09 54 64 -31 -23
-    0 art\ae_nabs1.png 400 510 09 54 64 -31 -23
+    0 art/ae_nabs1.png 8bpp 321 435 64 63 -31 -32 normal
+    0 art/ae_nabs1.png 8bpp 400 435 64 70 -31 -39 normal
+    0 art/ae_nabs1.png 8bpp 479 435 64 70 -31 -39 normal
+    0 art/ae_nabs1.png 8bpp 558 435 64 70 -31 -39 normal
+    0 art/ae_nabs1.png 8bpp 637 435 64 70 -31 -39 normal
+    0 art/ae_nabs1.png 8bpp 716 435 64 70 -31 -39 normal
+    0 art/ae_nabs1.png 8bpp 5 510 64 70 -31 -39 normal
+    0 art/ae_nabs1.png 8bpp 84 510 64 31 -31 0 normal
+    0 art/ae_nabs1.png 8bpp 163 510 64 54 -31 -23 normal
+    0 art/ae_nabs1.png 8bpp 242 510 64 54 -31 -23 normal
+    0 art/ae_nabs1.png 8bpp 321 510 64 54 -31 -23 normal
+    0 art/ae_nabs1.png 8bpp 400 510 64 54 -31 -23 normal
 
 // Action 0 to set properties:    
     0 * 0	 00 07 

@@ -4,12 +4,12 @@
 0 * 0	 01 07 06 FF 01 00 
 
 // Real Sprites:
-0 art\smallbuilding06.png 92 20 09 34 64 -31 -3
-0 art\smallbuilding06.png 167 20 09 57 64 -31 -28
-0 art\smallbuilding06.png 247 20 09 59 64 -31 -28
-0 art\smallbuilding06.png 327 20 09 59 64 -31 -28
-0 art\smallbuilding06.png 12 20 09 31 64 -31 0
-0 art\smallbuilding06.png 407 20 09 59 64 -31 -28
+0 art/smallbuilding06.png 8bpp 92 20 64 34 -31 -3 normal
+0 art/smallbuilding06.png 8bpp 167 20 64 57 -31 -28 normal
+0 art/smallbuilding06.png 8bpp 247 20 64 59 -31 -28 normal
+0 art/smallbuilding06.png 8bpp 327 20 64 59 -31 -28 normal
+0 art/smallbuilding06.png 8bpp 12 20 64 31 -31 0 normal
+0 art/smallbuilding06.png 8bpp 407 20 64 59 -31 -28 normal
 
 // Action 0 to set properties:   
 #include "action0s/smallbuildings.hnfo"

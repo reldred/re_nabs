@@ -3,12 +3,12 @@
 // Action 1
 0 * 0		01 07 06 FF 01 00 
 
-0 art\flatiron.png 76 3 09 119 64 -31 -88
-0 art\flatiron.png 213 3 09 119 64 -31 -88
-0 art\flatiron.png 354 3 09 119 64 -31 -88
-0 art\flatiron.png 495 3 09 119 64 -31 -88
-0 art\flatiron.png 633 3 09 119 64 -31 -88
-0 art\flatiron.png 773 3 09 119 64 -31 -88
+0 art/flatiron.png 8bpp 76 3 64 119 -31 -88 normal
+0 art/flatiron.png 8bpp 213 3 64 119 -31 -88 normal
+0 art/flatiron.png 8bpp 354 3 64 119 -31 -88 normal
+0 art/flatiron.png 8bpp 495 3 64 119 -31 -88 normal
+0 art/flatiron.png 8bpp 633 3 64 119 -31 -88 normal
+0 art/flatiron.png 8bpp 773 3 64 119 -31 -88 normal
 
 // Action 0
 0 * 0		00 07 

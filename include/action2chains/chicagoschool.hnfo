@@ -122,13 +122,13 @@
 		82 // var town pop
 		00 FF FF // varadj
 		02 // numranges
-		00 FF // setid
+		00 80 // setid
 		00 00 // minval
 		DB 05 // maxval
-		01 FF // setid
+		01 80 // setid
 		DC 05 // minval
 		FF FF // maxval
-		01 FF // default setid
+		01 80 // default setid
 		
 // Check to see how many are left, we'll allow one of each to survive for a max of 8
 0 * 0		02 07 // Act 2 feat 7
@@ -139,13 +139,13 @@
 		00 // shift
 		FF // and mask
 		02 // ranges to follow
-		01 FF // setid to use (protec)
+		01 80 // setid to use (protec)
 		00 // minval
 		01 // maxval		
-		00 FF // setid to use (unprotec)
+		00 80 // setid to use (unprotec)
 		02 // minval
 		FF // maxval
-		00 FF // setid to use (unprotec) 
+		00 80 // setid to use (unprotec) 
   
 // random chance 25% of protect
 0 * 0		02 07 // act 2 feat 7
@@ -154,7 +154,7 @@
 		00 // no triggers
 		00 // first random bit to use
 		04 // number of choices
-		01 FF // protect
+		01 80 // protect
 		A6 00 // unprotect if there's more than 1 left
 		A6 00 // unprotect if there's more than 1 left
 		A6 00 // unprotect if there's more than 1 left
@@ -166,7 +166,7 @@
 		00 // no triggers
 		00 // first random bit to use
 		02 // number of choices
-		01 FF // protec
+		01 80 // protec
 		A6 00 // unprotect if there's more than 1 left
 
 // random chance 75% of protect
@@ -176,9 +176,9 @@
 		00 // no triggers
 		00 // first random bit to use
 		04 // number of choices
-		01 FF // protect
-		01 FF // protect
-		01 FF // protect
+		01 80 // protect
+		01 80 // protect
+		01 80 // protect
 		A6 00 // unprotect if there's more than 1 left
 
 // years since 1920
@@ -186,10 +186,10 @@
 		A0 // setid
 		81 // global var
 		01 // var town pop
-		00 FF // varadj
+		00 80 // varadj
 		05 // numranges
 
-		01 FF // setid protec 0%
+		01 80 // setid protec 0%
 		00 // minval eightyone
 		14 // maxval infinity
 
@@ -205,11 +205,11 @@
 		3D // minval sixtyone
 		50 // maxval eighty
 
-		01 FF // setid protec 100%
+		01 80 // setid protec 100%
 		51 // minval eightyone
 		FF // maxval infinity
 
-		01 FF // default setid
+		01 80 // default setid
 
 // Current Callback  
 0 * 0		02 07 // act 2 feat 7

@@ -1,50 +1,50 @@
 // Chicago School NW THIN-WIDE 1
  1117 * 6	 01 07 2D FF 01 00 
- 1118 art\ae_nabs3.png 163 797 09 31 64 -31 0
- 1119 art\ae_nabs3.png 242 797 09 90 64 -31 -58
- 1120 art\ae_nabs3.png 321 797 09 81 64 -31 -50
- 1121 art\ae_nabs3.png 400 797 09 82 64 -31 -51
- 1122 art\ae_nabs3.png 479 797 09 31 64 -31 0
- 1123 art\ae_nabs3.png 558 797 09 86 65 -32 -55
- 1124 art\ae_nabs3.png 638 797 09 86 65 -32 -55
- 1125 art\ae_nabs3.png 718 797 09 86 64 -31 -55
- 1126 art\ae_nabs4.png 5 5 09 99 64 -31 -68
- 1127 art\ae_nabs4.png 84 5 09 85 66 -32 -54
- 1128 art\ae_nabs4.png 165 5 09 85 66 -32 -54
- 1129 art\ae_nabs4.png 246 5 09 84 65 -31 -53
- 1130 art\ae_nabs4.png 326 5 09 98 65 -31 -68
- 1131 art\ae_nabs4.png 406 5 09 88 66 -32 -57
- 1132 art\ae_nabs4.png 487 5 09 88 66 -32 -57
- 1133 art\ae_nabs4.png 568 5 09 88 65 -31 -57
- 1134 art\ae_nabs4.png 648 5 09 99 65 -31 -68
- 1135 art\ae_nabs4.png 5 109 09 93 66 -32 -62
- 1136 art\ae_nabs4.png 86 109 09 93 65 -32 -62
- 1137 art\ae_nabs4.png 166 109 09 93 65 -31 -62
- 1138 art\ae_nabs4.png 246 109 09 99 65 -31 -68
- 1139 art\ae_nabs4.png 326 109 09 96 65 -32 -65
- 1140 art\ae_nabs4.png 406 109 09 96 65 -32 -65
- 1141 art\ae_nabs4.png 486 109 09 96 64 -31 -65
- 1142 art\ae_nabs4.png 565 109 09 99 64 -31 -68
- 1143 art\ae_nabs4.png 644 109 09 86 65 -32 -55
- 1144 art\ae_nabs4.png 5 213 09 86 65 -32 -55
- 1145 art\ae_nabs4.png 85 213 09 86 64 -31 -55
- 1146 art\ae_nabs4.png 164 213 09 99 64 -31 -68
- 1147 art\ae_nabs4.png 243 213 09 85 66 -32 -54
- 1148 art\ae_nabs4.png 324 213 09 85 66 -32 -54
- 1149 art\ae_nabs4.png 405 213 09 84 65 -31 -53
- 1150 art\ae_nabs4.png 485 213 09 99 65 -31 -68
- 1151 art\ae_nabs4.png 565 213 09 88 66 -32 -57
- 1152 art\ae_nabs4.png 646 213 09 88 66 -32 -57
- 1153 art\ae_nabs4.png 5 317 09 88 65 -31 -57
- 1154 art\ae_nabs4.png 85 317 09 99 65 -31 -68
- 1155 art\ae_nabs4.png 165 317 09 93 66 -32 -62
- 1156 art\ae_nabs4.png 246 317 09 93 66 -32 -62
- 1157 art\ae_nabs4.png 327 317 09 93 65 -31 -62
- 1158 art\ae_nabs4.png 407 317 09 99 65 -31 -68
- 1159 art\ae_nabs4.png 487 317 09 96 65 -32 -65
- 1160 art\ae_nabs4.png 567 317 09 96 65 -32 -65
- 1161 art\ae_nabs4.png 647 317 09 96 64 -31 -65
- 1162 art\ae_nabs4.png 5 421 09 99 64 -31 -68
+ 1118 art/ae_nabs3.png 8bpp 163 797 64 31 -31 0 normal
+ 1119 art/ae_nabs3.png 8bpp 242 797 64 90 -31 -58 normal
+ 1120 art/ae_nabs3.png 8bpp 321 797 64 81 -31 -50 normal
+ 1121 art/ae_nabs3.png 8bpp 400 797 64 82 -31 -51 normal
+ 1122 art/ae_nabs3.png 8bpp 479 797 64 31 -31 0 normal
+ 1123 art/ae_nabs3.png 8bpp 558 797 65 86 -32 -55 normal
+ 1124 art/ae_nabs3.png 8bpp 638 797 65 86 -32 -55 normal
+ 1125 art/ae_nabs3.png 8bpp 718 797 64 86 -31 -55 normal
+ 1126 art/ae_nabs4.png 8bpp 5 5 64 99 -31 -68 normal
+ 1127 art/ae_nabs4.png 8bpp 84 5 66 85 -32 -54 normal
+ 1128 art/ae_nabs4.png 8bpp 165 5 66 85 -32 -54 normal
+ 1129 art/ae_nabs4.png 8bpp 246 5 65 84 -31 -53 normal
+ 1130 art/ae_nabs4.png 8bpp 326 5 65 98 -31 -68 normal
+ 1131 art/ae_nabs4.png 8bpp 406 5 66 88 -32 -57 normal
+ 1132 art/ae_nabs4.png 8bpp 487 5 66 88 -32 -57 normal
+ 1133 art/ae_nabs4.png 8bpp 568 5 65 88 -31 -57 normal
+ 1134 art/ae_nabs4.png 8bpp 648 5 65 99 -31 -68 normal
+ 1135 art/ae_nabs4.png 8bpp 5 109 66 93 -32 -62 normal
+ 1136 art/ae_nabs4.png 8bpp 86 109 65 93 -32 -62 normal
+ 1137 art/ae_nabs4.png 8bpp 166 109 65 93 -31 -62 normal
+ 1138 art/ae_nabs4.png 8bpp 246 109 65 99 -31 -68 normal
+ 1139 art/ae_nabs4.png 8bpp 326 109 65 96 -32 -65 normal
+ 1140 art/ae_nabs4.png 8bpp 406 109 65 96 -32 -65 normal
+ 1141 art/ae_nabs4.png 8bpp 486 109 64 96 -31 -65 normal
+ 1142 art/ae_nabs4.png 8bpp 565 109 64 99 -31 -68 normal
+ 1143 art/ae_nabs4.png 8bpp 644 109 65 86 -32 -55 normal
+ 1144 art/ae_nabs4.png 8bpp 5 213 65 86 -32 -55 normal
+ 1145 art/ae_nabs4.png 8bpp 85 213 64 86 -31 -55 normal
+ 1146 art/ae_nabs4.png 8bpp 164 213 64 99 -31 -68 normal
+ 1147 art/ae_nabs4.png 8bpp 243 213 66 85 -32 -54 normal
+ 1148 art/ae_nabs4.png 8bpp 324 213 66 85 -32 -54 normal
+ 1149 art/ae_nabs4.png 8bpp 405 213 65 84 -31 -53 normal
+ 1150 art/ae_nabs4.png 8bpp 485 213 65 99 -31 -68 normal
+ 1151 art/ae_nabs4.png 8bpp 565 213 66 88 -32 -57 normal
+ 1152 art/ae_nabs4.png 8bpp 646 213 66 88 -32 -57 normal
+ 1153 art/ae_nabs4.png 8bpp 5 317 65 88 -31 -57 normal
+ 1154 art/ae_nabs4.png 8bpp 85 317 65 99 -31 -68 normal
+ 1155 art/ae_nabs4.png 8bpp 165 317 66 93 -32 -62 normal
+ 1156 art/ae_nabs4.png 8bpp 246 317 66 93 -32 -62 normal
+ 1157 art/ae_nabs4.png 8bpp 327 317 65 93 -31 -62 normal
+ 1158 art/ae_nabs4.png 8bpp 407 317 65 99 -31 -68 normal
+ 1159 art/ae_nabs4.png 8bpp 487 317 65 96 -32 -65 normal
+ 1160 art/ae_nabs4.png 8bpp 567 317 65 96 -32 -65 normal
+ 1161 art/ae_nabs4.png 8bpp 647 317 64 96 -31 -65 normal
+ 1162 art/ae_nabs4.png 8bpp 5 421 64 99 -31 -68 normal
 
 #include "action0s/chicagoschool.hnfo"
   

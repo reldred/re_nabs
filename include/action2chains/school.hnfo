@@ -66,7 +66,7 @@
                  10 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  43 // Variable (Terrain Type)
-                 00 FF // Varadjust (AND FF)
+                 00 80 // Varadjust (AND FF)
                  02 // Nuber of ranges
                  // Range Checks:
                  03 00 // Use Set ID 3...
@@ -96,11 +96,11 @@
                  20 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
+                 00 80 // Varadjust (AND FF)
                  02 // Number of ranges
-                 01 FF // Return 1 if...
+                 01 80 // Return 1 if...
                  00 0A // Building 10 years or younger
-                 00 FF // Return 0 if...
+                 00 80 // Return 0 if...
                  0B FF // Building 11 years or older
                  03 00 // Default SetID to use if checks fail
    
@@ -109,11 +109,11 @@
                  21 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
+                 00 80 // Varadjust (AND FF)
                  02 // Number of ranges
-                 01 FF // Return 1 if...
+                 01 80 // Return 1 if...
                  00 0F // Building 15 years or younger
-                 00 FF // Return 0 if...
+                 00 80 // Return 0 if...
                  10 FF // Building 16 years or older
                  03 00 // Default SetID to use if checks fail 
    
@@ -122,11 +122,11 @@
                  22 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
+                 00 80 // Varadjust (AND FF)
                  02 // Number of ranges
-                 01 FF // Return 1 if...
+                 01 80 // Return 1 if...
                  00 14 // Building 20 years or younger
-                 00 FF // Return 0 if...
+                 00 80 // Return 0 if...
                  15 FF // Building 21 years or older
                  03 00 // Default SetID to use if checks fail 
    
@@ -135,11 +135,11 @@
                  23 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  41 // Variable (Age of building)
-                 00 FF // Varadjust (AND FF)
+                 00 80 // Varadjust (AND FF)
                  02 // Number of ranges
-                 01 FF // Return 1 if...
+                 01 80 // Return 1 if...
                  00 19 // Building 25 years or younger
-                 00 FF // Return 0 if...
+                 00 80 // Return 0 if...
                  1A FF // Building 26 years or older
                  03 00 // Default SetID to use if checks fail 
 
