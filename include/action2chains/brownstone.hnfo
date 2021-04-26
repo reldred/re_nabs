@@ -68,7 +68,7 @@
                  20 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  43 // Variable (Terrain Type)
-                 00 80 // AND Mask
+                 00 FF // AND Mask
                  02 // Number of ranges
                  // Range Checks:
                  03 00 // Use SetID 3 if...
@@ -160,7 +160,7 @@
                  22 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  43 // Variable (Terrain Type)
-                 00 80 // AND Mask
+                 00 FF // AND Mask
                  02 // Number of ranges
                  // Range Checks:
                  08 00 // Use SetID 08 if...
@@ -252,7 +252,7 @@
                  24 // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  43 // Variable (Terrain Type)
-                 00 80 // AND Mask
+                 00 FF // AND Mask
                  02 // Number of ranges
                  // Range Checks:
                  0D 00 // Use SetID 0D if...
@@ -344,14 +344,14 @@
                  26 // Set ID
                  81 // Type (Lowest Byte of value accessed for house) 
                  43 // Variable (Terrain Type)
-                 00 80 // Varadjust (AND FF)
+                 00 FF // Varadjust (AND FF)
                  02 // Number of ranges
                  // Range Checks:
                  12 00 // Use Set ID 12...
                  00 03 // If ground type between 0 and 3
                  13 00 // Use Set ID 13...
                  04 04 // If ground type between 4 and 4
-                 08 00 // Default Set ID to use if checks fail
+                 13 00 // Default Set ID to use if checks fail
 
 // Construction stages, at last stage go to ground type checking:  
     0 * 0	 02 07 // Action 2, Feature 07
