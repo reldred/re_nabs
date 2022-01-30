@@ -157,7 +157,7 @@
    
 // Current Callback. If callback for destruction called, goto no.24, else goto no.11:
     0 * 0	 02 07 // Action 2, Feature 07
-                 25 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)

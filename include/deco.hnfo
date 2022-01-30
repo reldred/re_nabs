@@ -26,7 +26,7 @@
 
  // Action 4 to set name:  
     0 * 0	 04 07  // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  BUILDING_ID C9 // Offset
                  "Deco Office Tower" 00 // String
@@ -147,7 +147,7 @@
 
 // Current Callback  
 0 * 0		02 07 // act 2 feat 7
-		3C // setid
+		FF // setid
 		85 // type, variable of building
 		0C // variable 0c current callback
 		00 // shift
@@ -162,4 +162,4 @@
 		2A 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 
 // Action 3
-2003 * 7	 03 07 01 BUILDING_ID 00 3C 00 
+2003 * 7	 03 07 01 BUILDING_ID 00 FF 00 

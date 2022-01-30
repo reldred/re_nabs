@@ -30,7 +30,7 @@
 
 // Action 4 to set name:  
 0 * 0		04 07  // Action 4, Feature 7
-		9F // Language ID
+		FF // Language ID
 		01 // Number of strings to change
 		BUILDING_ID C9 // Offset
 		"Flatiron North" 00 // String
@@ -39,4 +39,4 @@
 #include "action2chains/flatiron.hnfo"
                  
 // Action 3
-0 * 00		03 07 01 BUILDING_ID 00 1C 00
+0 * 00		03 07 01 BUILDING_ID 00 FF 00

@@ -36,7 +36,7 @@
     21 \w1895 22 \w1949
 // Action 4 to set name:  
    10 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  00 C9 // Offset
                  "Suburban House 01" 00 // String
@@ -113,7 +113,7 @@
                  03 00 // Default SetID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
    17 * 22	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -127,7 +127,7 @@
                  02 02 // If construction stage 2
                  10 00 // Default Set ID to use if checks fail
 // Assign last action2 to id.0:
-   18 * 7	 03 07 01 00 00 11 00
+   18 * 7	 03 07 01 00 00 FF 00
 // Fin
 // ID 01 Small House 2:
 // Small House 2 - Grey roof, small corner shops
@@ -153,7 +153,7 @@
   21 \w1895 22 \w1949
 // Action 4 to set name:  
    27 * 23	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  01 C9 // Offset
                  "Suburban Shop 01" 00 // String
@@ -230,7 +230,7 @@
   03 00 // Default Set ID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
    34 * 22	 02 07 // Action 2, Feature 07
-  11 // Set ID
+  FF // Set ID
   81 // Type (Lowest Byte of value accessed for house)
   40 // Variable (Construction stages)
   00 03 // Varadjust (AND FF)
@@ -248,7 +248,7 @@
   01 // 1 id associated
   01 // id.1
   00 // cargotype, not used innit
-  11 // last action2 setid
+  FF // last action2 setid
   00 // default setid
 // Fin
 // ID 02 Small Building 1:
@@ -277,7 +277,7 @@
   21 \w1895 22 \w1949
 // Action 4 to set name:  
    44 * 24	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   02 C9 // Offset
   "Small Building 01" 00 // String
@@ -355,7 +355,7 @@
                  03 00 // Default SetID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
    51 * 22	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -373,7 +373,7 @@
   01 // 1 id associated
   02 // id.2
   00 // cargotype, not used innit
-  11 // last action2 setid
+  FF // last action2 setid
   00 // default setid
 // Fin
 // ID 03 Small Building 2:
@@ -402,7 +402,7 @@
   21 \w1895 22 \w1949
 // Action 4 to set name:
    61 * 24	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   03 C9 // Offset
   "Small Building 02" 00 // String
@@ -480,7 +480,7 @@
                  03 00 // Default SetID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
    68 * 22	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -498,7 +498,7 @@
   01 // 1 id associated
   03 // id.2
   00 // cargotype, not used innit
-  11 // last action2 setid
+  FF // last action2 setid
   00 // default setid
 // Fin
 // ID 04 Small Building 3:
@@ -527,7 +527,7 @@
   21 \w1895 22 \w1949
 // Action 4 to set name:
    78 * 24	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   04 C9 // Offset
   "Small Building 03" 00 // String
@@ -605,7 +605,7 @@
                  03 00 // Default SetID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
    85 * 22	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -623,7 +623,7 @@
   01 // 1 id associated
   04 // id.2
   00 // cargotype, not used innit
-  11 // last action2 setid
+  FF // last action2 setid
   00 // default setid
 // Fin
 // ID 05 - 06 School (North and South)
@@ -647,13 +647,13 @@
 // 0A 00 1D // Set years availible
   10 \w45000 // LA Rating Decrease for Removal
   11 9B // Removal Cost Multiplier
-  13 03 78 // Set availibility mask
+  13 0C 78 // Set availibility mask
   18 02 // Probability
   1D 04 // Set prop 1D to 4
   21 \w1895 22 \w1949
 // Action 4 to set name:
    95 * 13	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   05 C9 // Offset
   "School" 00 // String
@@ -809,7 +809,7 @@
                  23 00 // SetID 23
 // Current Callback. If callback for destruction called, goto no.24, else goto no.11:
   108 * 17	 02 07 // Action 2, Feature 07
-                 25 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -818,7 +818,7 @@
                  43 01 43 01 // Callback 143 is being called
                  11 00 // Default Sprite to use if check fails (Else goto 11) 
 // Assign last action2 to id.25:
-  109 * 7	 03 07 01 05 00 25 00
+  109 * 7	 03 07 01 05 00 FF 00
 // Fin
 // School (S)
 // Action 1:
@@ -841,7 +841,7 @@
   1D 04 // Set prop 1D to 4 
 // Action 4 to set name:
   118 * 13	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   06 C9 // Offset
   "School" 00 // String
@@ -997,7 +997,7 @@
                  23 00 // SetID 23
 // Current Callback. If callback for destruction called, goto no.24, else goto no.11:
   131 * 17	 02 07 // Action 2, Feature 07
-                 25 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -1006,7 +1006,7 @@
                  43 01 43 01 // Callback 143 is being called
                  11 00 // Default Sprite to use if check fails (Else goto 11) 
 // Assign last action2 to id.2:
-  132 * 7	 03 07 01 06 00 25 00
+  132 * 7	 03 07 01 06 00 FF 00
 // Fin
 // ID 07 - 08 Brownstone NW (North and South)
 // Brownstone (NW) (N)
@@ -1035,13 +1035,13 @@
 //                0A 00 1D // Set years availible
                 10 \w20000 // Local Authority rating decrease
                 11 64 // Removal cost multiplier
-                13 0C 78 // Set availibilty mask
+                13 18 78 // Set availibilty mask
                 18 04 // Probability
                 1D 04 // Set prop 1D to 4
     21 \w1895 22 \w1949
 // Action 4 to set name:  
   147 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  07 C9 // Offset
                  "Large Flats" 00 // String
@@ -1471,7 +1471,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
   182 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -1482,7 +1482,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:       
-  183 * 7	 03 07 01 07 00 35 00
+  183 * 7	 03 07 01 07 00 FF 00
 // Fin
 // Brownstone (NW) (S)
 // Action 1:
@@ -1511,7 +1511,7 @@
                  1D 04 // Set Prop 1D to 4
 // Action 4 to set name:  
   198 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  08 C9 // Offset
                  "Large Flats" 00 // Strings
@@ -1941,7 +1941,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
   233 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -1952,7 +1952,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:  
-  234 * 7	 03 07 01 08 00 35 00
+  234 * 7	 03 07 01 08 00 FF 00
 // Fin
 // ID 09 - 0A Brownstone NE (North and South)
 // Brownstone (NE) (N)
@@ -1981,13 +1981,13 @@
 //                 0A 00 1D // Set years availible
                  10 \w20000 // Local authority rating decrease
                  11 64 // Removal cost multiplier
-                 13 0C 78 // Set availibility mask
+                 13 18 78 // Set availibility mask
                  18 04 // Probability
                  1D 04 // Set prop 1D to 4
     21 \w1895 22 \w1949
 // Action 4 to set name:  
   249 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  09 C9 // Offset
                  "Large Flats" 00 // String
@@ -2417,7 +2417,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
   284 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -2428,7 +2428,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:  
-  285 * 7	 03 07 01 09 00 35 00
+  285 * 7	 03 07 01 09 00 FF 00
 // Fin
 // Brownstone (NE) (S)
 // Action 1:
@@ -2450,7 +2450,7 @@
   299 * 14	 00 07 04 01 0A 08 4B 10 \w20000 11 64 1D 04
 // Action 4 to set name:  
   300 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  0A C9 // Offset
                  "Large Flats" 00 // String 
@@ -2880,7 +2880,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
   335 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -2891,7 +2891,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:  
-  336 * 7	 03 07 01 0A 00 35 00
+  336 * 7	 03 07 01 0A 00 FF 00
 // Fin  
 // ID 0B Chicago School NE THIN-WIDE 1
 // Chicago School NE THIN-WIDE 1
@@ -2951,7 +2951,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
 // Action 4 to set name:  
   384 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
          01 // Number of strings to change
          0B C9 // Offset
                  "Chicago School 01" 00 // String
@@ -3248,7 +3248,7 @@
   01 80 // default setid
 // Current Callback  
   460 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -3262,7 +3262,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
-  461 * 7	 03 07 01 0B 00 A1 00
+  461 * 7	 03 07 01 0B 00 FF 00
 // ID 0C Chicago School NE THIN-WIDE 2
 // Chicago School NE THIN-WIDE 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 337) has not been used.
@@ -3329,7 +3329,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
   // Action 4 to set name:  
   509 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              0C C9 // Offset
                  "Chicago School 02" 00 // String
@@ -3626,7 +3626,7 @@
   01 80 // default setid
 // Current Callback  
   585 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -3640,7 +3640,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
-  586 * 7	 03 07 01 0C 00 A1 00
+  586 * 7	 03 07 01 0C 00 FF 00
 // ID 0D Chicago School NE WIDE-THIN 1
 // Chicago School NE WIDE-THIN 1
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 462) has not been used.
@@ -3707,7 +3707,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
   // Action 4 to set name:  
   634 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              0D C9 // Offset
                  "Chicago School 03" 00 // String
@@ -4004,7 +4004,7 @@
   01 80 // default setid
 // Current Callback  
   710 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -4018,7 +4018,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
-  711 * 7	 03 07 01 0D 00 A1 00
+  711 * 7	 03 07 01 0D 00 FF 00
 // ID 0E Chicago School NE WIDE-THIN 2
 // Chicago School NE WIDE-THIN 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 587) has not been used.
@@ -4085,7 +4085,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
   // Action 4 to set name:  
   759 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              0E C9 // Offset
                  "Chicago School 04" 00 // String
@@ -4382,7 +4382,7 @@
   01 80 // default setid
 // Current Callback  
   835 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -4396,7 +4396,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
-  836 * 7	 03 07 01 0E 00 A1 00
+  836 * 7	 03 07 01 0E 00 FF 00
 // ID 0F Chicago School NW THIN-WIDE 1
 // Chicago School NW THIN-WIDE 1
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 712) has not been used.
@@ -4463,7 +4463,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
  // Action 4 to set name:  
   884 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              0F C9 // Offset
                  "Chicago School 05" 00 // String
@@ -4760,7 +4760,7 @@
   01 80 // default setid
 // Current Callback  
   960 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -4774,7 +4774,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
-  961 * 7	 03 07 01 0F 00 A1 00
+  961 * 7	 03 07 01 0F 00 FF 00
 // ID 10 Chicago School NW THIN-WIDE 2
 // Chicago School NW THIN-WIDE 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 837) has not been used.
@@ -4841,7 +4841,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
  // Action 4 to set name:  
  1009 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
                  10 C9 // Offset
                  "Chicago School 06" 00 // String
@@ -5138,7 +5138,7 @@
   01 80 // default setid
 // Current Callback  
  1085 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -5152,7 +5152,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 1086 * 7	 03 07 01 10 00 A1 00
+ 1086 * 7	 03 07 01 10 00 FF 00
 // ID 11 Chicago School NW WIDE-THIN 1
 // Chicago School NW WIDE-THIN 1
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 962) has not been used.
@@ -5219,7 +5219,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
  // Action 4 to set name:  
  1134 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
                  11 C9 // Offset
                  "Chicago School 07" 00 // String
@@ -5516,7 +5516,7 @@
   01 80 // default setid
 // Current Callback  
  1210 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -5530,7 +5530,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 1211 * 7	 03 07 01 11 00 A1 00
+ 1211 * 7	 03 07 01 11 00 FF 00
 // ID 12 Chicago School NW WIDE-THIN 2
 // Chicago School NW WIDE-THIN 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 1087) has not been used.
@@ -5597,7 +5597,7 @@
   10 \w30000 11 9B 13 10 78 14 01 18 08 1D 04 21 \w1895 22 \w1949
  // Action 4 to set name:  
  1259 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
                  12 C9 // Offset
                  "Chicago School 08" 00 // String
@@ -5894,7 +5894,7 @@
   01 80 // default setid
 // Current Callback  
  1335 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -5908,7 +5908,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 1336 * 7	 03 07 01 12 00 A1 00
+ 1336 * 7	 03 07 01 12 00 FF 00
 // ID 13 - 14 Large Deco Building (North and South)
 // Large Deco Building (NW)
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 1212) has not been used.
@@ -5932,7 +5932,7 @@
   10 \w60000 11 FF 13 10 78 14 01 18 20 19 02 1D 04 21 \w1895 22 \w1949
 // Action 4 to set name:  
  1345 * 23	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   13 C9 // Offset
   "Large Deco North" 00 // String
@@ -6064,7 +6064,7 @@
    15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  1356 * 23	 02 07 // act 2 feat 7
-   1C // setid
+   FF // setid
    85 // type, variable of building
    0C // variable 0c current callback
    00 // shift
@@ -6078,7 +6078,7 @@
    43 01 // callback 143 on destruct
    11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1357 * 7	 03 07 01 13 00 1C 00
+ 1357 * 7	 03 07 01 13 00 FF 00
 // Large Deco Building (SE)
 // Action 1
  1358 * 6	 01 07 06 FF 01 00
@@ -6092,7 +6092,7 @@
  1365 * 16	 00 07 05 01 14 08 43 10 \w60000 11 FF 19 02 1D 04
 // Action 4 to set name:  
  1366 * 23	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   14 C9 // Offset
   "Large Deco South" 00 // String
@@ -6224,7 +6224,7 @@
    15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  1377 * 23	 02 07 // act 2 feat 7
-   1C // setid
+   FF // setid
    85 // type, variable of building
    0C // variable 0c current callback
    00 // shift
@@ -6238,7 +6238,7 @@
    43 01 // callback 143 on destruct
    11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1378 * 7	 03 07 01 14 00 1C 00
+ 1378 * 7	 03 07 01 14 00 FF 00
 // ID 15 Deco Buildings
 // Deco Buildings
  1379 * 6	 01 07 06 FF 01 00
@@ -6254,7 +6254,7 @@
   1D 04 21 \w1895 22 \w1949
  // Action 4 to set name:  
  1387 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  15 C9 // Offset
                  "Deco Office Tower" 00 // String
@@ -6415,7 +6415,7 @@
   01 80 // default setid  
 // Current Callback  
  1468 * 23	 02 07 // act 2 feat 7
-  3C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -6429,7 +6429,7 @@
   43 01 // callback 143 on destruct
   2A 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1469 * 7	 03 07 01 15 00 3C 00
+ 1469 * 7	 03 07 01 15 00 FF 00
 // ID 16 small building 04
 // Small Building 4 - More flats.
 // Action 1:
@@ -6456,7 +6456,7 @@
   21 \w1895 22 \w1949
 // Action 4 to set name:
  1478 * 24	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   16 C9 // Offset
   "Small Building 04" 00 // String
@@ -6534,7 +6534,7 @@
                  03 00 // Default SetID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
  1485 * 22	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -6552,7 +6552,7 @@
   01 // 1 id associated
   16 // id.2
   00 // cargotype, not used innit
-  11 // last action2 setid
+  FF // last action2 setid
   00 // default setid
 // Fin
 // ID 17 small building 04
@@ -6581,7 +6581,7 @@
   21 \w1895 22 \w1949
 // Action 4 to set name:
  1495 * 24	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   17 C9 // Offset
   "Small Building 05" 00 // String
@@ -6659,7 +6659,7 @@
                  03 00 // Default SetID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
  1502 * 22	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -6677,7 +6677,7 @@
   01 // 1 id associated
   17 // id.2
   00 // cargotype, not used innit
-  11 // last action2 setid
+  FF // last action2 setid
   00 // default setid
 // Fin
 // ID 18 small building 06
@@ -6706,7 +6706,7 @@
   21 \w1895 22 \w1949
 // Action 4 to set name:
  1512 * 24	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   18 C9 // Offset
   "Small Building 06" 00 // String
@@ -6784,7 +6784,7 @@
                  03 00 // Default SetID to use if checks fail
 // Construction stages, at last stage go to ground type checking:
  1519 * 22	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -6802,7 +6802,7 @@
   01 // 1 id associated
   18 // id.2
   00 // cargotype, not used innit
-  11 // last action2 setid
+  FF // last action2 setid
   00 // default setid
 // Fin
 // ID 19 - 1A Flatiron (North and South)
@@ -6822,7 +6822,7 @@
   1D 04 21 \w1895 22 \w1949
 // Action 4 to set name:  
  1529 * 21	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   19 C9 // Offset
   "Flatiron North" 00 // String
@@ -6887,7 +6887,7 @@
   15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  1540 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -6901,7 +6901,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1541 * 7	 03 07 01 19 00 1C 00
+ 1541 * 7	 03 07 01 19 00 FF 00
 // Flatiron (SE)
 // Action 1
  1542 * 6	 01 07 06 FF 01 00
@@ -6916,7 +6916,7 @@
   1D 04
 // Action 4 to set name:  
  1550 * 21	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   1A C9 // Offset
   "Flatiron South" 00 // String
@@ -6981,7 +6981,7 @@
   15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  1561 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -6995,9 +6995,9 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1562 * 7	 03 07 01 1A 00 1C 00
+ 1562 * 8	 03 07 01 1A 00 FF 00
 // ID 1B - 1E Department Store (North, East, West and South)
-// Department Store (N)
+ 0C// Department Store (N)
 // Action 1
  1563 * 6	 01 07 06 FF 01 00
  1564 art/departmentstore.png 8bpp 5 7 64 35 -31 -4 normal
@@ -7012,7 +7012,7 @@
   10 \w60000 11 FF 13 10 78 14 01 18 04 19 02 1D 04 21 \w1895 22 \w1949
 // Action 4 to set name:  
  1571 * 29	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  1B C9 // Offset
                  "Department Store North" 00 // String
@@ -7067,7 +7067,7 @@
   01 80 // default setid  
 // Current Callback  
  1581 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -7081,7 +7081,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1582 * 7	 03 07 01 1B 00 1C 00
+ 1582 * 7	 03 07 01 1B 00 FF 00
 // Department Store (E)
 // Action 1
  1583 * 6	 01 07 06 FF 01 00
@@ -7095,7 +7095,7 @@
  1590 * 16	 00 07 05 01 1C 08 21 10 \w60000 11 FF 19 02 1D 04
 // Action 4 to set name:  
  1591 * 28	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   1C C9 // Offset
   "Department Store East" 00 // String
@@ -7150,7 +7150,7 @@
   01 80 // default setid  
 // Current Callback  
  1601 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -7164,7 +7164,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1602 * 7	 03 07 01 1C 00 1C 00
+ 1602 * 7	 03 07 01 1C 00 FF 00
 // Department Store (W)
 // Action 1
  1603 * 6	 01 07 06 FF 01 00
@@ -7178,7 +7178,7 @@
  1610 * 16	 00 07 05 01 1D 08 22 10 \w60000 11 FF 19 02 1D 04
 // Action 4 to set name:  
  1611 * 28	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   1D C9 // Offset
   "Department Store West" 00 // String
@@ -7233,7 +7233,7 @@
   01 80 // default setid  
 // Current Callback  
  1621 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -7247,7 +7247,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1622 * 7	 03 07 01 1D 00 1C 00
+ 1622 * 7	 03 07 01 1D 00 FF 00
 // Department Store (S)
 // Action 1
  1623 * 6	 01 07 06 FF 01 00
@@ -7261,7 +7261,7 @@
  1630 * 16	 00 07 05 01 1E 08 23 10 \w60000 11 FF 19 02 1D 04
 // Action 4 to set name:  
  1631 * 29	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   1E C9 // Offset
   "Department Store South" 00 // String
@@ -7316,7 +7316,7 @@
   01 80 // default setid  
 // Current Callback  
  1641 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -7330,7 +7330,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 1642 * 7	 03 07 01 1E 00 1C 00
+ 1642 * 7	 03 07 01 1E 00 FF 00
 // Special ones for scenario editor after 1950
 // ID 1F - 20 Brownstone NW (North and South)
 // Brownstone (NW) (N)
@@ -7360,12 +7360,12 @@
                   0A \b1950 \b2175 // Set years availible
                  10 \w20000 // Local Authority rating decrease
                   11 64 // Removal cost multiplier
-                  13 0C 78 // Set availibilty mask
-                  18 04 // Probability
+                  13 18 78 // Set availibilty mask
+                  18 0F // Probability
                   19 03  1D 04 // Set prop 1D to 4
 // Action 4 to set name:  
  1657 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  1F C9 // Offset
                  "Large Flats" 00 // String
@@ -7795,7 +7795,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
  1692 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -7806,7 +7806,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:       
- 1693 * 7	 03 07 01 1F 00 35 00
+ 1693 * 7	 03 07 01 1F 00 FF 00
 // Fin
 // Brownstone (NW) (S)
 // Action 1:
@@ -7835,7 +7835,7 @@
    19 03 1D 04 // Set Prop 1D to 4
 // Action 4 to set name:  
  1708 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  20 C9 // Offset
                  "Large Flats" 00 // Strings
@@ -8264,7 +8264,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
  1743 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -8275,7 +8275,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:  
- 1744 * 7	 03 07 01 20 00 35 00
+ 1744 * 7	 03 07 01 20 00 FF 00
 // Fin
 // ID 21 - 22 Brownstone NE (North and South)
 // Brownstone (NE) (N)
@@ -8305,12 +8305,12 @@
                   0A \b1950 \b2175 // Set years availible
                  10 \w20000 // Local authority rating decrease
                   11 64 // Removal cost multiplier
-                  13 0C 78 // Set availibility mask
-                  18 04 // Probability
+                  13 18 78 // Set availibility mask
+                  18 0F // Probability
                   19 03  1D 04 // Set prop 1D to 4
 // Action 4 to set name:  
  1759 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  21 C9 // Offset
                  "Large Flats" 00 // String
@@ -8739,7 +8739,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
  1794 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -8750,7 +8750,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:  
- 1795 * 7	 03 07 01 21 00 35 00
+ 1795 * 7	 03 07 01 21 00 FF 00
 // Fin
 // Brownstone (NE) (S)
 // Action 1:
@@ -8772,7 +8772,7 @@
  1809 * 16	 00 07 05 01 22 08 4B 10 \w20000 11 64 19 03 1D 04
 // Action 4 to set name:  
  1810 * 18	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  22 C9 // Offset
                  "Large Flats" 00 // String 
@@ -9201,7 +9201,7 @@
   01 80 // default setid
 // Current Callback. If callback for destruction called, goto no.24, else goto no.28:  
  1845 * 23	 02 07 // Action 2, Feature 07
-                 35 // Set ID
+                 FF // Set ID
                  85 // Type (Lowest Word of value accessed for house)
                  0C // Variable (Current Callback)
                  00 FF FF // Varadjust (AND FFFF)
@@ -9212,7 +9212,7 @@
                  43 01 43 01 // Callback 143 is being called
                  28 00 // Default Sprite to use if check fails (Else goto 28) 
 // Assign last action2 to id.35:  
- 1846 * 7	 03 07 01 22 00 35 00
+ 1846 * 7	 03 07 01 22 00 FF 00
 // Fin  
 // ID 23 Chicago School NE THIN-WIDE 1
 // Chicago School NE THIN-WIDE 1
@@ -9273,13 +9273,13 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
 // Action 4 to set name:  
 
  1894 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
          01 // Number of strings to change
          23 C9 // Offset
                  "Chicago School 01" 00 // String
@@ -9576,7 +9576,7 @@
   01 80 // default setid
 // Current Callback  
  1970 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -9590,7 +9590,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 1971 * 7	 03 07 01 23 00 A1 00
+ 1971 * 7	 03 07 01 23 00 FF 00
 // ID 24 Chicago School NE THIN-WIDE 2
 // Chicago School NE THIN-WIDE 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 1847) has not been used.
@@ -9658,13 +9658,13 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
   // Action 4 to set name:  
 
  2019 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              24 C9 // Offset
                  "Chicago School 02" 00 // String
@@ -9961,7 +9961,7 @@
   01 80 // default setid
 // Current Callback  
  2095 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -9975,7 +9975,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 2096 * 7	 03 07 01 24 00 A1 00
+ 2096 * 7	 03 07 01 24 00 FF 00
 // ID 25 Chicago School NE WIDE-THIN 1
 // Chicago School NE WIDE-THIN 1
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 1972) has not been used.
@@ -10043,13 +10043,13 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
   // Action 4 to set name:  
 
  2144 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              25 C9 // Offset
                  "Chicago School 03" 00 // String
@@ -10346,7 +10346,7 @@
   01 80 // default setid
 // Current Callback  
  2220 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -10360,7 +10360,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 2221 * 7	 03 07 01 25 00 A1 00
+ 2221 * 7	 03 07 01 25 00 FF 00
 // ID 26 Chicago School NE WIDE-THIN 2
 // Chicago School NE WIDE-THIN 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 2097) has not been used.
@@ -10428,13 +10428,13 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
   // Action 4 to set name:  
 
  2269 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              26 C9 // Offset
                  "Chicago School 04" 00 // String
@@ -10731,7 +10731,7 @@
   01 80 // default setid
 // Current Callback  
  2345 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -10745,7 +10745,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 2346 * 7	 03 07 01 26 00 A1 00
+ 2346 * 7	 03 07 01 26 00 FF 00
 // ID 27 Chicago School NW THIN-WIDE 1
 // Chicago School NW THIN-WIDE 1
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 2222) has not been used.
@@ -10813,13 +10813,13 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
  // Action 4 to set name:  
 
  2394 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              27 C9 // Offset
                  "Chicago School 05" 00 // String
@@ -11116,7 +11116,7 @@
   01 80 // default setid
 // Current Callback  
  2470 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -11130,7 +11130,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 2471 * 7	 03 07 01 27 00 A1 00
+ 2471 * 7	 03 07 01 27 00 FF 00
 // ID 28 Chicago School NW THIN-WIDE 2
 // Chicago School NW THIN-WIDE 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 2347) has not been used.
@@ -11198,15 +11198,15 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
  // Action 4 to set name:  
 
  2519 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
-                 10 C9 // Offset
+                 28 C9 // Offset
                  "Chicago School 06" 00 // String
 // Action 2 Chain:
 // Stuff happens. Don't try to comprehend, quick way to a whole lot of brain trauma...                 
@@ -11501,7 +11501,7 @@
   01 80 // default setid
 // Current Callback  
  2595 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -11515,7 +11515,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 2596 * 7	 03 07 01 28 00 A1 00
+ 2596 * 7	 03 07 01 28 00 FF 00
 // ID 29 Chicago School NW WIDE-THIN 1
 // Chicago School NW WIDE-THIN 1
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 2472) has not been used.
@@ -11583,13 +11583,13 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
  // Action 4 to set name:  
 
  2644 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
                  11 C9 // Offset
                  "Chicago School 07" 00 // String
@@ -11886,7 +11886,7 @@
   01 80 // default setid
 // Current Callback  
  2720 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -11900,7 +11900,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 2721 * 7	 03 07 01 29 00 A1 00
+ 2721 * 7	 03 07 01 29 00 FF 00
 // ID 2A Chicago School NW WIDE-THIN 2
 // Chicago School NW WIDE-THIN 2
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 2597) has not been used.
@@ -11968,13 +11968,13 @@
      11 9B
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
  // Action 4 to set name:  
 
  2769 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
                  12 C9 // Offset
                  "Chicago School 08" 00 // String
@@ -12271,7 +12271,7 @@
   01 80 // default setid
 // Current Callback  
  2845 * 23	 02 07 // act 2 feat 7
-  A1 // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -12285,7 +12285,7 @@
   43 01 // callback 143 on destruct
   99 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // action 3 to tie the action2 chain back to the building definition 
- 2846 * 7	 03 07 01 2A 00 A1 00
+ 2846 * 7	 03 07 01 2A 00 FF 00
 // ID 2B - 2C Large Deco Building (North and South)
 // Large Deco Building (NW)
 //!!Warning (97): Set 15 defined by the previous Action 1 (sprite 2722) has not been used.
@@ -12318,7 +12318,7 @@
 // Action 4 to set name:  
 
  2855 * 23	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   2B C9 // Offset
   "Large Deco North" 00 // String
@@ -12383,7 +12383,7 @@
   15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  2866 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -12397,7 +12397,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 2867 * 7	 03 07 01 2B 00 1C 00
+ 2867 * 7	 03 07 01 2B 00 FF 00
 // Large Deco Building (SE)
 // Action 1
  2868 * 6	 01 07 06 FF 01 00
@@ -12411,7 +12411,7 @@
  2875 * 16	 00 07 05 01 2C 08 43 10 \w60000 11 FF 19 03 1D 04
 // Action 4 to set name:  
  2876 * 23	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   2C C9 // Offset
   "Large Deco South" 00 // String
@@ -12476,7 +12476,7 @@
   15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  2887 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -12490,7 +12490,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 2888 * 7	 03 07 01 2C 00 1C 00
+ 2888 * 7	 03 07 01 2C 00 FF 00
 // ID 2D Deco Buildings
 // Deco Buildings
  2889 * 6	 01 07 06 FF 01 00
@@ -12508,13 +12508,13 @@
      11 FF
      13 10 78
      14 01
-     18 08
+     18 0F
      19 03 // Flat out protected.
    1D 04
  // Action 4 to set name:  
 
  2897 * 24	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  2D C9 // Offset
                  "Deco Office Tower" 00 // String
@@ -12675,7 +12675,7 @@
   01 80 // default setid  
 // Current Callback  
  2978 * 23	 02 07 // act 2 feat 7
-  3C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -12689,7 +12689,7 @@
   43 01 // callback 143 on destruct
   2A 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 2979 * 7	 03 07 01 2D 00 3C 00
+ 2979 * 7	 03 07 01 2D 00 FF 00
 // ID 2E - 2F Flatiron (North and South)
 // Flatiron (NW)
 // Action 1
@@ -12715,7 +12715,7 @@
 // Action 4 to set name:  
 
  2988 * 21	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   2E C9 // Offset
   "Flatiron North" 00 // String
@@ -12780,7 +12780,7 @@
   15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  2999 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -12794,7 +12794,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 3000 * 7	 03 07 01 2E 00 1C 00
+ 3000 * 7	 03 07 01 2E 00 FF 00
 // Flatiron (SE)
 // Action 1
  3001 * 6	 01 07 06 FF 01 00
@@ -12809,7 +12809,7 @@
   1D 04
 // Action 4 to set name:  
  3009 * 21	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   2F C9 // Offset
   "Flatiron South" 00 // String
@@ -12874,7 +12874,7 @@
   15 00 // setid to use (goto the check for how many been built)
 // Current Callback  
  3020 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -12888,7 +12888,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 3021 * 7	 03 07 01 2F 00 1C 00
+ 3021 * 7	 03 07 01 2F 00 FF 00
 // ID 30 - 33 Department Store (North, East, West and South)
 // Department Store (N)
 // Action 1
@@ -12908,13 +12908,13 @@
      11 FF
      13 10 78
      14 01
-     18 04
+     18 0F
      19 03
      1D 04
 // Action 4 to set name:  
 
  3030 * 29	 04 07 // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  30 C9 // Offset
                  "Department Store North" 00 // String
@@ -12969,7 +12969,7 @@
   01 80 // default setid  
 // Current Callback  
  3040 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -12983,7 +12983,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 3041 * 7	 03 07 01 30 00 1C 00
+ 3041 * 7	 03 07 01 30 00 FF 00
 // Department Store (E)
 // Action 1
  3042 * 6	 01 07 06 FF 01 00
@@ -12997,7 +12997,7 @@
  3049 * 16	 00 07 05 01 31 08 21 10 \w60000 11 FF 19 03 1D 04
 // Action 4 to set name:  
  3050 * 28	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   31 C9 // Offset
   "Department Store East" 00 // String
@@ -13052,7 +13052,7 @@
   01 80 // default setid  
 // Current Callback  
  3060 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -13066,7 +13066,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 3061 * 7	 03 07 01 31 00 1C 00
+ 3061 * 7	 03 07 01 31 00 FF 00
 // Department Store (W)
 // Action 1
  3062 * 6	 01 07 06 FF 01 00
@@ -13080,7 +13080,7 @@
  3069 * 16	 00 07 05 01 32 08 22 10 \w60000 11 FF 19 03 1D 04
 // Action 4 to set name:  
  3070 * 28	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   32 C9 // Offset
   "Department Store West" 00 // String
@@ -13135,7 +13135,7 @@
   01 80 // default setid  
 // Current Callback  
  3080 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -13149,7 +13149,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 3081 * 7	 03 07 01 32 00 1C 00
+ 3081 * 7	 03 07 01 32 00 FF 00
 // Department Store (S)
 // Action 1
  3082 * 6	 01 07 06 FF 01 00
@@ -13163,7 +13163,7 @@
  3089 * 16	 00 07 05 01 33 08 23 10 \w60000 11 FF 19 03 1D 04
 // Action 4 to set name:  
  3090 * 29	 04 07 // Action 4, Feature 7
-  9F // Language ID
+  FF // Language ID
   01 // Number of strings to change
   33 C9 // Offset
   "Department Store South" 00 // String
@@ -13218,7 +13218,7 @@
   01 80 // default setid  
 // Current Callback  
  3100 * 23	 02 07 // act 2 feat 7
-  1C // setid
+  FF // setid
   85 // type, variable of building
   0C // variable 0c current callback
   00 // shift
@@ -13232,7 +13232,7 @@
   43 01 // callback 143 on destruct
   11 00 // default setid which is the random chance to pick the style, which points at the construction stages, etc.
 // Action 3
- 3101 * 7	 03 07 01 33 00 1C 00
+ 3101 * 7	 03 07 01 33 00 FF 00
 // Fin
 //!!For feature 7 the following cargoIDs have not been used since their most recent definition:
 //!!27 (last defined at sprite 2960)

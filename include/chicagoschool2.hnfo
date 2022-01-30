@@ -51,7 +51,7 @@
  
   // Action 4 to set name:  
 0 * 0	 04 07  // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
              01 // Number of strings to change
              BUILDING_ID C9 // Offset
                  "Chicago School 02" 00 // String
@@ -60,4 +60,4 @@
 #include "action2chains/chicagoschool.hnfo"
 
 // action 3 to tie the action2 chain back to the building definition 
-  744 * 7	 03 07 01 BUILDING_ID 00 A1 00
+  744 * 7	 03 07 01 BUILDING_ID 00 FF 00

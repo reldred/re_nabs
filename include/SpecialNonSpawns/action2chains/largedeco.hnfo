@@ -52,7 +52,7 @@
 
 // Current Callback  
 0 * 0		02 07 // act 2 feat 7
-		1C // setid
+		FF // setid
 		85 // type, variable of building
 		0C // variable 0c current callback
 		00 // shift

@@ -26,7 +26,7 @@
 
 // Action 4 to set name:  
     0 * 0	 04 07  // Action 4, Feature 7
-                 9F // Language ID
+                 FF // Language ID
                  01 // Number of strings to change
                  BUILDING_ID C9 // Offset
                  "Suburban House 01" 00 // String
@@ -111,7 +111,7 @@
                  
 // Construction stages, at last stage go to ground type checking:
     0 * 0	 02 07 // Action 2, Feature 07
-                 11 // Set ID
+                 FF // Set ID
                  81 // Type (Lowest Byte of value accessed for house)
                  40 // Variable (Construction stages)
                  00 03 // Varadjust (AND FF)
@@ -126,6 +126,6 @@
                  10 00 // Default Set ID to use if checks fail
 
 // Assign last action2 to id.0:
-    0 * 0	 03 07 01 BUILDING_ID 00 11 00 
+    0 * 0	 03 07 01 BUILDING_ID 00 FF 00 
 
 // Fin

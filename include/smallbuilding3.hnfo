@@ -16,7 +16,7 @@
 
 // Action 4 to set name:
 0 * 0		04 07 // Action 4, Feature 7
-		9F // Language ID
+		FF // Language ID
 		01 // Number of strings to change
 		BUILDING_ID C9 // Offset
 		"Small Building 03" 00  // String
@@ -29,7 +29,7 @@
 		01 // 1 id associated
 		BUILDING_ID // id.2
 		00 // cargotype, not used innit
-		11 // last action2 setid
+		FF // last action2 setid
 		00 // default setid
 
 // Fin
